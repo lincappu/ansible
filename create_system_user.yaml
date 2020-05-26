@@ -9,6 +9,6 @@
    - name: create system user
      user: name= "{{item.name}}"  password= "{{'123456'|password_hash('sha512')}}"  generate_ssh_key=yes
      with_items:
-       - {name: "A_Gorilla"}
-       - {name: "www02"}
-       - {name: "www03"}    
+     - {name: "A_Gorilla"}
+     - {name: "www02"}
+     - {name: "www03"}    
