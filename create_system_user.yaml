@@ -15,5 +15,5 @@
        generate_ssh_key=yes
      with_items:
      - {name: "A_Gorilla", group: "A_Gorilla"}
-     - {name: "www02" ,group: "www02"}
-     - {name: "www03",group: "www03"}    
+     - {name: "www02",    group: "www02"}
+     - {name: "www03",    group: "www03"}    
