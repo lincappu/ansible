@@ -14,7 +14,7 @@
        password= "{{'123456'|password_hash('sha512')}}"
        generate_ssh_key=yes
      with_items:
-       - {name: 'A_Gorilla', group: 'A_Gorilla'}
+       - {name:'A_Gorilla', group:'A_Gorilla'}
   
      
      
