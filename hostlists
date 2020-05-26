@@ -1,0 +1,4 @@
+[bigdata_dev]
+ds1 ansible_ssh_host=172.16.71.1 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'
+ds2 ansible_ssh_host=172.16.71.2 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'
+ds3 ansible_ssh_host=172.16.71.3 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'
