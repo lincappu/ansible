@@ -1,0 +1,14 @@
+---
+ - name: create system user
+   hosts: bigdata_dev
+   remote_user: fanliusong
+   become: yes
+   become_user: root
+   become_method: sudo
+   tasks:
+   - name: create system user
+     user: name= "{{item.name}}"  password= "{{'123456'|password_hash('sha512')}}"  generate_ssh_key=yes
+     with_items:
+       - {name: "A_Gorilla"}
+       - {name: "www02"}
+       - {name: "www03"}    
