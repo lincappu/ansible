@@ -6,7 +6,7 @@
    become_user: root
    become_method: sudo
    tasks:
-   - name: create system user
+     name: create system user
      user: 
        state: present
        name= "{{item.name}}"
@@ -14,6 +14,8 @@
        password= "{{'123456'|password_hash('sha512')}}"
        generate_ssh_key=yes
      with_items:
-     - {name: "A_Gorilla", group: "A_Gorilla"}
-     - {name: "www02",    group: "www02"}
-     - {name: "www03",    group: "www03"}    
+       - {name: 'A_Gorilla', group: 'A_Gorilla'}
+  
+     
+     
+ 
