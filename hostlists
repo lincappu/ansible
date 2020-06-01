@@ -2,3 +2,11 @@
 ds1 ansible_ssh_host=172.16.71.1 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'
 ds2 ansible_ssh_host=172.16.71.2 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'
 ds3 ansible_ssh_host=172.16.71.3 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'
+
+[crawl_dev]
+crawl1 ansible_ssh_host=172.16.71.101 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'
+crawl2 ansible_ssh_host=172.16.71.102 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'
+crawl3 ansible_ssh_host=172.16.71.103 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'    
+crawl4 ansible_ssh_host=172.16.71.104 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'
+crawl5 ansible_ssh_host=172.16.71.105 ansible_ssh_port=22 ansible_ssh_user=fanliusong ansible_ssh_pass='yJNDSDcUjIDAD42342' ansible_become=true  ansible_become_method=sudo ansible_become_user=root  ansible_become_pass='yJNDSDcUjIDAD42342'
+  

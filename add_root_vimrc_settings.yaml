@@ -1,0 +1,11 @@
+---
+- name: add root vimrc config
+  hosts: bigdata_dev
+  gather_facts: False
+  remote_user: fanliusong   
+  become: yes
+  become_user: root
+  become_method: sudo
+  tasks:
+    - name: add root_vimrc settting
+      shell:  echo "set nu"  >> /root/.vimrc   &&  echo "set hlsearch"  >> /root/.vimrc && echo "syntax on"  >> /root/.vimrc  && echo "set history=9999"  >> /root/.vimrc  && echo "set tabstop=4"  >> /root/.vimrc  && echo "set expandtab"  >> /root/.vimrc  && echo "set autoindent"  >> /root/.vimrc && echo "set softtabstop=4"  >> /root/.vimrc && echo "set shiftwidth=4"  >> /root/.vimrc
