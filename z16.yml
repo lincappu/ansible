@@ -1,6 +1,0 @@
-- hosts: ds3
-  vars:
-    var_test: test_file
-  tasks:
-    - name: touch test file test_file
-      file: path=/tmp/{{ var_test }}, state=touch
