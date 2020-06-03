@@ -1,11 +1,7 @@
 ---
-- name: create uesr
-  hosts: bigdata_dev
-  gather_facts: False
-  remote_user: fanliusong   
-  become: yes
-  become_user: root
-  become_method: sudo
+- name: creat user
+  hosts: xen
+  gather_fa: False
   vars_prompt:
     - name: "user_name"
       prompt: "Enter user name"
