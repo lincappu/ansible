@@ -9,3 +9,4 @@
   tasks:
     - name: add root_vimrc settting
       shell:  echo "set nu"  >> /root/.vimrc   &&  echo "set hlsearch"  >> /root/.vimrc && echo "syntax on"  >> /root/.vimrc  && echo "set history=9999"  >> /root/.vimrc  && echo "set tabstop=4"  >> /root/.vimrc  && echo "set expandtab"  >> /root/.vimrc && echo "set softtabstop=4"  >> /root/.vimrc && echo "set shiftwidth=4"  >> /root/.vimrc
+      tags: add_root_vimrc

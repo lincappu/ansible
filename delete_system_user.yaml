@@ -1,23 +1,28 @@
 ---
-- name: test
+- name: delete system user
   hosts: bigdata_dev
   gather_facts: False
   remote_user: fanliusong   
   become: yes
   become_user: root
   become_method: sudo
-  vars:
-    user: jumpserver
+  vars_prompt:
+    - name: "user_name"
+      prompt: "Enter user name"
+      private: no
+
   tasks:
     - name: check home file
-      shell: ls  /home/{{ user }}/
+      shell: ls  /home/{{user_name}}/
       register: check_home_file_result
     - name: show check_home_file_result
+#      debug: var=check_home_file_result verbosity=0
       debug: var=check_home_file_result.stdout verbosity=0
     - name: wait for confierm delete
       pause: prompt="Warning! Detected slight issue. ENTER to continue CTRL-C a to quit" 
     - name: delete system user
       user:
-        name: "{{ user }}"
+        name: "{{user_name}}"
         state: absent
         remove: yes
+      tags: delete_system_user

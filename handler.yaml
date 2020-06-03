@@ -1,6 +1,45 @@
 ---
 - hosts: ds3
   remote_user: root
+
+  vars:
+    group:
+      name: fls
+      age: 15
+    user: fanliusong
+
+    users:
+    - name: bob
+      gender: male
+      hobby:
+      - Skateboard
+      - VideoGame
+
+    testpath: /testdir1
+
+    dirs:
+    - "/opt/a"
+    - "/opt/b"
+    - "/opt/c"
+    - "/opt/d"
+
+#  vars_prompt:
+#    - name: "your_name"
+#      prompt: "your name "
+#      private: no
+#    - name: "you_age"
+#      prompt: "your age "
+#      private: no
+#
+#    - name: "solution"
+#      prompt: "Choose the solution you want \n
+#      A: solutionA\n
+#      B: solutionB\n
+#      C: solutionC\n"
+#      private: no
+#      default: A
+
+
   tasks:
   - name: Modify the configuration
     lineinfile:
@@ -9,7 +48,174 @@
       line="        listen\1 8088 \2"
       backrefs=yes
       backup=yes
+    notify: handler_group
+
+  - name: add tag1
+    file:
+      path: /tmp/{{group.name}}
+      state: touch
+    tags: tag1
+
+  - name: add tag2
+    file:
+      path: /tmp/tag{{user}}
+      state: touch
+    tags: [tag2]
+
+  - name: add tag3
+    file:
+      path: "{{user}}"
+      state: touch
+    tags: [tag3]
+
+
+#  - meta: flush_handlers
+
+
+  - name: debug_demo
+    debug:
+      msg: "Remote host memory is: {{ansible_memory_mb.real}}"
+    tags: debug_demo
+
+  - name: debug_prompt
+    debug:
+      msg: your name is {{your_name}} and your age is {{you_age}}
+    tags: debug_prompt
+
+  - name: "Passing Variables On The Command Line"
+    debug:
+      msg: "{{pass_var}} and {{pass_var1}}"
+    tags: pass_vars
+
+
+# 循环：
+  - name: with_items1
+    debug:
+      msg: "{{item}}"
+    with_items:
+      - a
+      - b
+      - c
+    tags: with_items1
+
+  - name: with_items2
+    debug:
+      msg: "{{item.test1}}"
+    with_items:
+      - {test1: a, test2: b}
+      - {test1: c, test2: d}
+    tags: with_items2
+
+  - name: with_items3
+    file:
+      path: "{{item}}"
+      state: touch
+    with_items: "{{dirs}}"
+    tags: with_items3
+
+
+  - name: with_item4
+    shell: "{{item}}"
+    with_items:
+      - "ls /opt"
+      - "ls /home"
+    register: returnvalue
+    tags: with_items4
+  - debug:
+      msg: "{{item.stdout}}"
+    with_items: "{{returnvalue.results}}"
+    tags: with_items4
+
+
+  - name: with_items5
+    debug:
+      msg: "{{item}}"
+#    with_list:
+#    with_flattened:
+#    with_together:
+#    with_cartesian:
+#    with_indexed_items:
+#     with_sequence: start=1 end=100 stride=1
+#    with_random_choice:
+#    - [ test1, test2 ]
+#    - [ test3,[ test4, test5] ]
+#    - [ test6 ]
+#    with_dict: "{{group}}"
+#    with_subelements:
+#    - "{{users}}"
+#    - hobby
+
+#    with_file:  # 只能是ansible主机的文件
+    with_fileglob:
+    - /opt/*
+    tags: with_items5
+
+
+
+# 条件判断：
+  - name: if
+    shell: "ls /root"
+    register: returnmsg
+    ignore_errors: true
+    tags: if
+  - name: if2
+    debug:
+      msg: "command execution successful"
+    when: returnmsg.rc==0
+    tags: if
+  - name: if3
+    debug:
+      msg: "command execution error"
+    when: returnmsg.rc != 0
+    tags: if
+
+  - debug:
+      msg: "file not exists"
+    when: not testpath is exists/none/failure/undefied/file/directory/mount/odd/even/
+    tags: if2
+
+
+#  - block:
+#    - debug:
+#        msg: 'I execute normally'
+#    - command: /bin/false
+#    - debug:
+#        msg: 'I never execute, due to the above task failing'
+#    rescue:
+#      - debug:
+#         msg: 'I caught an error'
+#      - command: /bin/false
+#      - debug:
+#          msg: 'I also never execute'
+#    always:
+#      - debug:
+#          msg: "This always executes"
+
+
+# role 角色：
+#  - name: roletest
+#    roles:
+#    - local
+#    tags: role1
+
+
+  - name: show
+    debug:
+      msg: "{{playbook_dir}}"
+    tags: test3
+
+
+
+
+  handlers:
   - name: restart nginx
+    listen: handler_group
     service:
       name=nginx
       state=restarted
+  - name: touch_file
+    listen: handler_group
+    file:
+      path: /tmp/handlers_ok
+      state: touch
+

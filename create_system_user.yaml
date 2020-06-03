@@ -1,19 +1,43 @@
 ---
 - name: test
-  hosts: crawl_dev
+  hosts: bigdata_dev
   gather_facts: False
   remote_user: fanliusong   
   become: yes
   become_user: root
   become_method: sudo
+  vars_prompt:
+    - name: "user_name"
+      prompt: "Enter user name"
+      private: no
+    - name: "user_password"
+      prompt: "Enter user password"
+      encrypt: "sha512_crypt"
+      private: no
+      confirm: yes
   tasks:
-    - name: create system user 
+    - name: create system user
       user:
+        name: "{{user_name}}"
+        password: "{{user_password}}"
         state: present
-        name: "{{item}}"
-        password: "{{'NEw3HLkLx0G5WDHC'|password_hash('sha512')}}"
+        shell: /bin/bash
+        createhome: yes
         generate_ssh_key: yes
-      with_items:
-        - jumpserver
-    - name: add sudoers
-      shell: echo "jumpserver    ALL=(ALL)       NOPASSWD:ALL" >>  /etc/sudoers
+      tags: create_system_user
+
+    - name: update sudoers file
+      lineinfile:
+        path: /etc/sudoers
+        line: '{{ user_name }} ALL=(ALL) NOPASSWD: ALL'
+        insertafter: EOF
+        regexp: '^{{ username }} .*'
+        state: present
+        backrefs: yes
+      tags: [create_system_user,update_sudoers]
+
+    - name: set authorized key
+      authorized_key:
+        user: "{{user_name}}"
+        key: "{{loop('file','/home/{{ username }}/.ssh/id_rsa.pub')}}"
+        state: present

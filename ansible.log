@@ -1,0 +1,3159 @@
+2020-06-01 17:03:50,258 p=16118 u=FLS |  PLAY [ds3] ***********************************************************************************************************
+2020-06-01 17:03:50,274 p=16118 u=FLS |  TASK [Modify the configuration] **************************************************************************************
+2020-06-01 17:03:51,411 p=16118 u=FLS |  ok: [ds3]
+2020-06-01 17:03:51,413 p=16118 u=FLS |  PLAY RECAP ***********************************************************************************************************
+2020-06-01 17:03:51,414 p=16118 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-01 17:06:28,830 p=17672 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-01 17:06:28,843 p=17672 u=FLS |  TASK [Modify the configuration] *************************************************************
+2020-06-01 17:06:30,092 p=17672 u=FLS |  ok: [ds3]
+2020-06-01 17:06:30,094 p=17672 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-01 17:06:30,095 p=17672 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-01 17:08:34,786 p=18914 u=FLS |  PLAY [ds3] ******************************************************************************************
+2020-06-01 17:08:34,798 p=18914 u=FLS |  TASK [Modify the configuration] *********************************************************************
+2020-06-01 17:08:37,245 p=18914 u=FLS |  changed: [ds3]
+2020-06-01 17:08:37,247 p=18914 u=FLS |  RUNNING HANDLER [restart nginx] *********************************************************************
+2020-06-01 17:08:40,146 p=18914 u=FLS |  changed: [ds3]
+2020-06-01 17:08:40,162 p=18914 u=FLS |  TASK [touch file] ***********************************************************************************
+2020-06-01 17:08:41,169 p=18914 u=FLS |  changed: [ds3]
+2020-06-01 17:08:41,171 p=18914 u=FLS |  PLAY RECAP ******************************************************************************************
+2020-06-01 17:08:41,171 p=18914 u=FLS |  ds3                        : ok=3    changed=3    unreachable=0    failed=0   
+2020-06-01 17:11:12,584 p=20493 u=FLS |  PLAY [ds3] ******************************************************************************************
+2020-06-01 17:11:12,604 p=20493 u=FLS |  TASK [Modify the configuration] *********************************************************************
+2020-06-01 17:11:13,692 p=20493 u=FLS |  ok: [ds3]
+2020-06-01 17:11:13,699 p=20493 u=FLS |  TASK [touch file] ***********************************************************************************
+2020-06-01 17:11:14,448 p=20493 u=FLS |  changed: [ds3]
+2020-06-01 17:11:14,450 p=20493 u=FLS |  PLAY RECAP ******************************************************************************************
+2020-06-01 17:11:14,451 p=20493 u=FLS |  ds3                        : ok=2    changed=1    unreachable=0    failed=0   
+2020-06-01 17:12:11,027 p=21136 u=FLS |  PLAY [ds3] ******************************************************************************************
+2020-06-01 17:12:11,041 p=21136 u=FLS |  TASK [Modify the configuration] *********************************************************************
+2020-06-01 17:12:12,138 p=21136 u=FLS |  changed: [ds3]
+2020-06-01 17:12:12,140 p=21136 u=FLS |  RUNNING HANDLER [restart nginx] *********************************************************************
+2020-06-01 17:12:14,534 p=21136 u=FLS |  changed: [ds3]
+2020-06-01 17:12:14,537 p=21136 u=FLS |  RUNNING HANDLER [touch_file] ************************************************************************
+2020-06-01 17:12:15,265 p=21136 u=FLS |  changed: [ds3]
+2020-06-01 17:12:15,271 p=21136 u=FLS |  TASK [touch file] ***********************************************************************************
+2020-06-01 17:12:16,687 p=21136 u=FLS |  changed: [ds3]
+2020-06-01 17:12:16,689 p=21136 u=FLS |  PLAY RECAP ******************************************************************************************
+2020-06-01 17:12:16,689 p=21136 u=FLS |  ds3                        : ok=4    changed=4    unreachable=0    failed=0   
+2020-06-01 17:18:35,732 p=24878 u=FLS |  playbook: handler.yaml
+2020-06-01 17:18:35,733 p=24878 u=FLS |    play #1 (ds3): ds3	TAGS: []
+2020-06-01 17:18:35,735 p=24878 u=FLS |        TASK TAGS: [t1, tag2, tag3]
+
+2020-06-01 17:19:00,654 p=25198 u=FLS |  PLAY [ds3] ************************************************************************************************
+2020-06-01 17:19:00,667 p=25198 u=FLS |  TASK [add tag] ********************************************************************************************
+2020-06-01 17:19:01,491 p=25198 u=FLS |  changed: [ds3]
+2020-06-01 17:19:01,495 p=25198 u=FLS |  PLAY RECAP ************************************************************************************************
+2020-06-01 17:19:01,495 p=25198 u=FLS |  ds3                        : ok=1    changed=1    unreachable=0    failed=0   
+2020-06-01 17:19:16,060 p=25325 u=FLS |  PLAY [ds3] ************************************************************************************************
+2020-06-01 17:19:16,070 p=25325 u=FLS |  TASK [Modify the configuration] ***************************************************************************
+2020-06-01 17:19:16,630 p=25325 u=FLS |  ok: [ds3]
+2020-06-01 17:19:16,637 p=25325 u=FLS |  TASK [add tag2] *******************************************************************************************
+2020-06-01 17:19:17,210 p=25325 u=FLS |  changed: [ds3]
+2020-06-01 17:19:17,217 p=25325 u=FLS |  TASK [touch file] *****************************************************************************************
+2020-06-01 17:19:17,688 p=25325 u=FLS |  changed: [ds3]
+2020-06-01 17:19:17,691 p=25325 u=FLS |  PLAY RECAP ************************************************************************************************
+2020-06-01 17:19:17,691 p=25325 u=FLS |  ds3                        : ok=3    changed=2    unreachable=0    failed=0   
+2020-06-01 17:26:23,029 p=29561 u=FLS |   [ERROR]: User interrupted execution
+
+2020-06-01 17:26:53,143 p=29877 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-01 17:26:53,157 p=29877 u=FLS |  TASK [Modify the configuration] *************************************************************
+2020-06-01 17:26:53,951 p=29877 u=FLS |  ok: [ds3]
+2020-06-01 17:26:53,958 p=29877 u=FLS |  TASK [add tag] ******************************************************************************
+2020-06-01 17:26:54,570 p=29877 u=FLS |  changed: [ds3]
+2020-06-01 17:26:54,577 p=29877 u=FLS |  TASK [add tag2] *****************************************************************************
+2020-06-01 17:26:55,054 p=29877 u=FLS |  changed: [ds3]
+2020-06-01 17:26:55,061 p=29877 u=FLS |  TASK [touch file] ***************************************************************************
+2020-06-01 17:26:55,540 p=29877 u=FLS |  changed: [ds3]
+2020-06-01 17:26:55,542 p=29877 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-01 17:26:55,542 p=29877 u=FLS |  ds3                        : ok=4    changed=3    unreachable=0    failed=0   
+2020-06-01 17:32:16,290 p=33018 u=FLS |  PLAY [ds3] ************************************************************************************************
+2020-06-01 17:32:16,303 p=33018 u=FLS |  TASK [Modify the configuration] ***************************************************************************
+2020-06-01 17:32:17,168 p=33018 u=FLS |  ok: [ds3]
+2020-06-01 17:32:17,174 p=33018 u=FLS |  TASK [add tag2] *******************************************************************************************
+2020-06-01 17:32:17,783 p=33018 u=FLS |  changed: [ds3]
+2020-06-01 17:32:17,790 p=33018 u=FLS |  TASK [add tag3] *******************************************************************************************
+2020-06-01 17:32:18,262 p=33018 u=FLS |  changed: [ds3]
+2020-06-01 17:32:18,269 p=33018 u=FLS |  TASK [touch file] *****************************************************************************************
+2020-06-01 17:32:18,745 p=33018 u=FLS |  changed: [ds3]
+2020-06-01 17:32:18,747 p=33018 u=FLS |  PLAY RECAP ************************************************************************************************
+2020-06-01 17:32:18,747 p=33018 u=FLS |  ds3                        : ok=4    changed=3    unreachable=0    failed=0   
+2020-06-01 17:33:59,492 p=34109 u=FLS |  PLAY [ds3] ************************************************************************************************
+2020-06-01 17:33:59,509 p=34109 u=FLS |  TASK [Modify the configuration] ***************************************************************************
+2020-06-01 17:34:01,225 p=34109 u=FLS |  ok: [ds3]
+2020-06-01 17:34:01,230 p=34109 u=FLS |  TASK [add tag2] *******************************************************************************************
+2020-06-01 17:34:02,498 p=34109 u=FLS |  changed: [ds3]
+2020-06-01 17:34:02,504 p=34109 u=FLS |  TASK [add tag3] *******************************************************************************************
+2020-06-01 17:34:03,363 p=34109 u=FLS |  changed: [ds3]
+2020-06-01 17:34:03,369 p=34109 u=FLS |  TASK [touch file] *****************************************************************************************
+2020-06-01 17:34:05,274 p=34109 u=FLS |  changed: [ds3]
+2020-06-01 17:34:05,275 p=34109 u=FLS |  PLAY RECAP ************************************************************************************************
+2020-06-01 17:34:05,276 p=34109 u=FLS |  ds3                        : ok=4    changed=3    unreachable=0    failed=0   
+2020-06-01 17:34:13,006 p=34376 u=FLS |  PLAY [ds3] ************************************************************************************************
+2020-06-01 17:34:13,011 p=34376 u=FLS |  PLAY RECAP ************************************************************************************************
+2020-06-01 17:35:40,445 p=35194 u=FLS |  PLAY [ds3] ************************************************************************************************
+2020-06-01 17:35:40,448 p=35194 u=FLS |  PLAY RECAP ************************************************************************************************
+2020-06-01 17:35:49,864 p=35300 u=FLS |  PLAY [ds3] ************************************************************************************************
+2020-06-01 17:35:49,873 p=35300 u=FLS |  TASK [add tag1] *******************************************************************************************
+2020-06-01 17:35:50,660 p=35300 u=FLS |  changed: [ds3]
+2020-06-01 17:35:50,662 p=35300 u=FLS |  PLAY RECAP ************************************************************************************************
+2020-06-01 17:35:50,662 p=35300 u=FLS |  ds3                        : ok=1    changed=1    unreachable=0    failed=0   
+2020-06-01 17:42:03,080 p=39084 u=FLS |  ERROR! You must specify a playbook file to run
+2020-06-01 17:42:14,361 p=39197 u=FLS |  PLAY [ds3] ****************************************************************************************
+2020-06-01 17:42:14,401 p=39197 u=FLS |  TASK [add tag2] ***********************************************************************************
+2020-06-01 17:42:15,723 p=39197 u=FLS |  changed: [ds3]
+2020-06-01 17:42:15,726 p=39197 u=FLS |  PLAY RECAP ****************************************************************************************
+2020-06-01 17:42:15,727 p=39197 u=FLS |  ds3                        : ok=1    changed=1    unreachable=0    failed=0   
+2020-06-01 17:42:39,237 p=39428 u=FLS |  PLAY [ds3] ****************************************************************************************
+2020-06-01 17:42:39,252 p=39428 u=FLS |  TASK [add tag2] ***********************************************************************************
+2020-06-01 17:42:40,515 p=39428 u=FLS |  changed: [ds3]
+2020-06-01 17:42:40,519 p=39428 u=FLS |  PLAY RECAP ****************************************************************************************
+2020-06-01 17:42:40,519 p=39428 u=FLS |  ds3                        : ok=1    changed=1    unreachable=0    failed=0   
+2020-06-01 17:42:57,920 p=39651 u=FLS |  PLAY [ds3] ********************************************************************************************
+2020-06-01 17:42:57,936 p=39651 u=FLS |  TASK [add tag3] ***************************************************************************************
+2020-06-01 17:42:58,894 p=39651 u=FLS |  changed: [ds3]
+2020-06-01 17:42:58,896 p=39651 u=FLS |  PLAY RECAP ********************************************************************************************
+2020-06-01 17:42:58,897 p=39651 u=FLS |  ds3                        : ok=1    changed=1    unreachable=0    failed=0   
+2020-06-01 17:43:14,516 p=39773 u=FLS |  PLAY [ds3] ********************************************************************************************
+2020-06-01 17:43:14,528 p=39773 u=FLS |  TASK [add tag3] ***************************************************************************************
+2020-06-01 17:43:15,265 p=39773 u=FLS |  changed: [ds3]
+2020-06-01 17:43:15,270 p=39773 u=FLS |  PLAY RECAP ********************************************************************************************
+2020-06-01 17:43:15,270 p=39773 u=FLS |  ds3                        : ok=1    changed=1    unreachable=0    failed=0   
+2020-06-01 17:48:31,943 p=42927 u=FLS |  PLAY [ds3] ********************************************************************************************
+2020-06-01 17:48:31,967 p=42927 u=FLS |  TASK [add tag3] ***************************************************************************************
+2020-06-01 17:48:33,286 p=42927 u=FLS |  changed: [ds3]
+2020-06-01 17:48:33,289 p=42927 u=FLS |  PLAY RECAP ********************************************************************************************
+2020-06-01 17:48:33,289 p=42927 u=FLS |  ds3                        : ok=1    changed=1    unreachable=0    failed=0   
+2020-06-01 17:50:34,083 p=44414 u=FLS |  PLAY [ds3] ********************************************************************************************
+2020-06-01 17:50:34,098 p=44414 u=FLS |  TASK [add tag3] ***************************************************************************************
+2020-06-01 17:50:34,976 p=44414 u=FLS |  changed: [ds3]
+2020-06-01 17:50:34,978 p=44414 u=FLS |  PLAY RECAP ********************************************************************************************
+2020-06-01 17:50:34,979 p=44414 u=FLS |  ds3                        : ok=1    changed=1    unreachable=0    failed=0   
+2020-06-02 13:55:06,399 p=32911 u=FLS |  ds3 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.16.71.3",
+            "172.17.0.1",
+            "172.18.0.1"
+        ],
+        "ansible_all_ipv6_addresses": [],
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "04/01/2014",
+        "ansible_bios_version": "8a46cfe",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-3.10.0-693.21.1.el7.x86_64",
+            "LANG": "en_US.UTF-8",
+            "console": "ttyS0,115200n8",
+            "crashkernel": "auto",
+            "idle": "halt",
+            "net.ifnames": "0",
+            "ro": true,
+            "root": "UUID=eb448abb-3012-4d8d-bcde-94434d586a31"
+        },
+        "ansible_date_time": {
+            "date": "2020-06-02",
+            "day": "02",
+            "epoch": "1591077294",
+            "hour": "13",
+            "iso8601": "2020-06-02T05:54:54Z",
+            "iso8601_basic": "20200602T135454879287",
+            "iso8601_basic_short": "20200602T135454",
+            "iso8601_micro": "2020-06-02T05:54:54.879372Z",
+            "minute": "54",
+            "month": "06",
+            "second": "54",
+            "time": "13:54:54",
+            "tz": "CST",
+            "tz_offset": "+0800",
+            "weekday": "Tuesday",
+            "weekday_number": "2",
+            "weeknumber": "22",
+            "year": "2020"
+        },
+        "ansible_default_ipv4": {
+            "address": "172.16.71.3",
+            "alias": "eth0",
+            "broadcast": "172.16.71.255",
+            "gateway": "172.16.71.253",
+            "interface": "eth0",
+            "macaddress": "00:16:3e:06:a3:7f",
+            "mtu": 1500,
+            "netmask": "255.255.252.0",
+            "network": "172.16.68.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {},
+            "masters": {},
+            "uuids": {
+                "vda1": [
+                    "eb448abb-3012-4d8d-bcde-94434d586a31"
+                ],
+                "vdb1": [
+                    "038e9ae1-fc66-4896-aafd-6bb0b7f10cc2"
+                ],
+                "vdc": [
+                    "bf365fdc-2753-4f15-b29c-889a700f4647"
+                ],
+                "vdd": [
+                    "12084a06-cf49-44cc-8383-7c17eca3a878"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "vda": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc Virtio block device",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "eb448abb-3012-4d8d-bcde-94434d586a31"
+                            ]
+                        },
+                        "sectors": "83881984",
+                        "sectorsize": 512,
+                        "size": "40.00 GB",
+                        "start": "2048",
+                        "uuid": "eb448abb-3012-4d8d-bcde-94434d586a31"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "",
+                "sectors": "83886080",
+                "sectorsize": "512",
+                "size": "40.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            },
+            "vdb": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc Virtio block device",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vdb1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "038e9ae1-fc66-4896-aafd-6bb0b7f10cc2"
+                            ]
+                        },
+                        "sectors": "4294965310",
+                        "sectorsize": 512,
+                        "size": "2.00 TB",
+                        "start": "34",
+                        "uuid": "038e9ae1-fc66-4896-aafd-6bb0b7f10cc2"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "",
+                "sectors": "4294967296",
+                "sectorsize": "512",
+                "size": "2.00 TB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            },
+            "vdc": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc Virtio block device",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": [
+                        "bf365fdc-2753-4f15-b29c-889a700f4647"
+                    ]
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "",
+                "sectors": "8388608000",
+                "sectorsize": "512",
+                "size": "3.91 TB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            },
+            "vdd": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc Virtio block device",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": [
+                        "12084a06-cf49-44cc-8383-7c17eca3a878"
+                    ]
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "",
+                "sectors": "2097152000",
+                "sectorsize": "512",
+                "size": "1000.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "CentOS",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/redhat-release",
+        "ansible_distribution_file_variety": "RedHat",
+        "ansible_distribution_major_version": "7",
+        "ansible_distribution_release": "Core",
+        "ansible_distribution_version": "7.6.1810",
+        "ansible_dns": {
+            "nameservers": [
+                "100.100.2.136",
+                "100.100.2.138"
+            ],
+            "options": {
+                "attempts": "3",
+                "rotate": true,
+                "single-request-reopen": true,
+                "timeout": "2"
+            }
+        },
+        "ansible_docker0": {
+            "active": true,
+            "device": "docker0",
+            "features": {
+                "busy_poll": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "off [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_fcoe_segmentation": "off [requested on]",
+                "tx_gre_csum_segmentation": "on",
+                "tx_gre_segmentation": "on",
+                "tx_gso_partial": "on",
+                "tx_gso_robust": "off [requested on]",
+                "tx_ipip_segmentation": "on",
+                "tx_lockless": "on [fixed]",
+                "tx_mpls_segmentation": "on",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "on",
+                "tx_sctp_segmentation": "on",
+                "tx_sit_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_tnl_csum_segmentation": "on",
+                "tx_udp_tnl_segmentation": "on",
+                "tx_vlan_offload": "on",
+                "tx_vlan_stag_hw_insert": "on",
+                "udp_fragmentation_offload": "on",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "id": "8000.02424ed99145",
+            "interfaces": [
+                "vetheea7fb2",
+                "veth44c9526"
+            ],
+            "ipv4": {
+                "address": "172.17.0.1",
+                "broadcast": "172.17.255.255",
+                "netmask": "255.255.0.0",
+                "network": "172.17.0.0"
+            },
+            "macaddress": "02:42:4e:d9:91:45",
+            "mtu": 1500,
+            "promisc": false,
+            "stp": false,
+            "timestamping": [
+                "rx_software",
+                "software"
+            ],
+            "type": "bridge"
+        },
+        "ansible_docker_gwbridge": {
+            "active": true,
+            "device": "docker_gwbridge",
+            "features": {
+                "busy_poll": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "off [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_fcoe_segmentation": "off [requested on]",
+                "tx_gre_csum_segmentation": "on",
+                "tx_gre_segmentation": "on",
+                "tx_gso_partial": "on",
+                "tx_gso_robust": "off [requested on]",
+                "tx_ipip_segmentation": "on",
+                "tx_lockless": "on [fixed]",
+                "tx_mpls_segmentation": "on",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "on",
+                "tx_sctp_segmentation": "on",
+                "tx_sit_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_tnl_csum_segmentation": "on",
+                "tx_udp_tnl_segmentation": "on",
+                "tx_vlan_offload": "on",
+                "tx_vlan_stag_hw_insert": "on",
+                "udp_fragmentation_offload": "on",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "id": "8000.02423352cd11",
+            "interfaces": [
+                "vethb6c352d"
+            ],
+            "ipv4": {
+                "address": "172.18.0.1",
+                "broadcast": "172.18.255.255",
+                "netmask": "255.255.0.0",
+                "network": "172.18.0.0"
+            },
+            "macaddress": "02:42:33:52:cd:11",
+            "mtu": 1500,
+            "promisc": false,
+            "stp": false,
+            "timestamping": [
+                "rx_software",
+                "software"
+            ],
+            "type": "bridge"
+        },
+        "ansible_domain": "",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_env": {
+            "HOME": "/root",
+            "LC_CTYPE": "zh_CN.UTF-8",
+            "LOGNAME": "root",
+            "MAIL": "/var/mail/fanliusong",
+            "PATH": "/sbin:/bin:/usr/sbin:/usr/bin",
+            "PWD": "/home/fanliusong",
+            "SHELL": "/bin/bash",
+            "SHLVL": "1",
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-qgmrveiwqtnpozqstvpvhzhgdllcygeq; /usr/bin/python /home/fanliusong/.ansible/tmp/ansible-tmp-1591077289.399473-216724822298415/AnsiballZ_setup.py",
+            "SUDO_GID": "1003",
+            "SUDO_UID": "1003",
+            "SUDO_USER": "fanliusong",
+            "TERM": "xterm-256color",
+            "USER": "root",
+            "USERNAME": "root",
+            "_": "/usr/bin/python"
+        },
+        "ansible_eth0": {
+            "active": true,
+            "device": "eth0",
+            "features": {
+                "busy_poll": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipip_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_mpls_segmentation": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_sit_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "on",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "172.16.71.3",
+                "broadcast": "172.16.71.255",
+                "netmask": "255.255.252.0",
+                "network": "172.16.68.0"
+            },
+            "macaddress": "00:16:3e:06:a3:7f",
+            "module": "virtio_net",
+            "mtu": 1500,
+            "pciid": "virtio0",
+            "promisc": false,
+            "timestamping": [
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "ds3",
+        "ansible_hostname": "ds3",
+        "ansible_interfaces": [
+            "veth44c9526",
+            "vethb6c352d",
+            "lo",
+            "docker0",
+            "docker_gwbridge",
+            "vetheea7fb2",
+            "eth0"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "3.10.0-693.21.1.el7.x86_64",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "busy_poll": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipip_segmentation": "off [fixed]",
+                "tx_lockless": "on [fixed]",
+                "tx_mpls_segmentation": "off [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_sit_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "on",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "host",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [
+                "rx_software",
+                "software"
+            ],
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {
+            "codename": "Core",
+            "description": "CentOS Linux release 7.6.1810 (Core)",
+            "id": "CentOS",
+            "major_release": "7",
+            "release": "7.6.1810"
+        },
+        "ansible_lvm": {
+            "lvs": {},
+            "pvs": {},
+            "vgs": {}
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "f0f31005fb5a436d88e3c6cbf54e25aa",
+        "ansible_memfree_mb": 1141,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 29161,
+                "used": 228626
+            },
+            "real": {
+                "free": 1141,
+                "total": 257787,
+                "used": 256646
+            },
+            "swap": {
+                "cached": 0,
+                "free": 0,
+                "total": 0,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 257787,
+        "ansible_mounts": [
+            {
+                "block_available": 2267478,
+                "block_size": 4096,
+                "block_total": 10287952,
+                "block_used": 8020474,
+                "device": "/dev/vda1",
+                "fstype": "ext4",
+                "inode_available": 2456930,
+                "inode_total": 2621440,
+                "inode_used": 164510,
+                "mount": "/",
+                "options": "rw,relatime,data=ordered",
+                "size_available": 9287589888,
+                "size_total": 42139451392,
+                "uuid": "eb448abb-3012-4d8d-bcde-94434d586a31"
+            },
+            {
+                "block_available": 397132390,
+                "block_size": 4096,
+                "block_total": 528411379,
+                "block_used": 131278989,
+                "device": "/dev/vdb1",
+                "fstype": "ext4",
+                "inode_available": 134150893,
+                "inode_total": 134217728,
+                "inode_used": 66835,
+                "mount": "/tidb",
+                "options": "rw,noatime,nodelalloc,data=ordered",
+                "size_available": 1626654269440,
+                "size_total": 2164373008384,
+                "uuid": "038e9ae1-fc66-4896-aafd-6bb0b7f10cc2"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource",
+                "options": "rw,relatime,attr2,inode64,noquota",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            },
+            {
+                "block_available": 111372516,
+                "block_size": 4096,
+                "block_total": 262016000,
+                "block_used": 150643484,
+                "device": "/dev/vdd",
+                "fstype": "xfs",
+                "inode_available": 524212556,
+                "inode_total": 524288000,
+                "inode_used": 75444,
+                "mount": "/searchdata",
+                "options": "rw,relatime,attr2,inode64,noquota",
+                "size_available": 456181825536,
+                "size_total": 1073217536000,
+                "uuid": "12084a06-cf49-44cc-8383-7c17eca3a878"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource/docker/containers/4d7a730e7719b35cc07dd253e188941e0d204f987b6aa40bc0fa35280facbfaf/mounts",
+                "options": "rw,relatime,attr2,inode64,noquota,bind",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource/docker/containers/9a94f39c87df541c25f34f5523b955060e3bcf1ec3edaf78f9e1809419da9afa/mounts",
+                "options": "rw,relatime,attr2,inode64,noquota,bind",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            },
+            {
+                "block_available": 10736381283,
+                "block_size": 1048576,
+                "block_total": 10737418240,
+                "block_used": 1036957,
+                "device": "1d23f4b48f-goh76.cn-beijing.nas.aliyuncs.com:/",
+                "fstype": "nfs4",
+                "inode_available": 999988289,
+                "inode_total": 1000000000,
+                "inode_used": 11711,
+                "mount": "/snapshot",
+                "options": "rw,relatime,vers=4.0,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=6000,retrans=10,sec=sys,clientaddr=172.16.71.3,local_lock=none,addr=172.16.68.1",
+                "size_available": 11257911740203008,
+                "size_total": 11258999068426240,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource/docker/containers/668aaab04a4fbf5b51d68fabbeb31621f43de643f346990399eb797e1c79d8cf/mounts",
+                "options": "rw,relatime,attr2,inode64,noquota,bind",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource/docker/containers/fb2eb0a09ac5590d7a97dfc5b20194dbe9134159c0815cec8394614427a05da8/mounts",
+                "options": "rw,relatime,attr2,inode64,noquota,bind",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource/docker/containers/ab45eb429bcdeaa7828b9eafe95553adc31700a69274551c5161811cb125d452/mounts",
+                "options": "rw,relatime,attr2,inode64,noquota,bind",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource/docker/containers/35e19dd2c46057cfa1c1211537396afac23155896ffabe18fd78b47b2a01d59a/mounts",
+                "options": "rw,relatime,attr2,inode64,noquota,bind",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource/docker/containers/d6e37c040f7682d1de50975a3ef63a3436e8ea8fc6f404620e02882f7a3119da/mounts",
+                "options": "rw,relatime,attr2,inode64,noquota,bind",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource/docker/containers/670f1a6007167a7661c05cc9f6ab4ed725a6ec4e8503a796e67e015f6f2d6519/mounts",
+                "options": "rw,relatime,attr2,inode64,noquota,bind",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource/docker/containers/2de3e2f6eaf414750baf62f5721f2ef31cb6f416f3d97ffe5195671d3e43431b/mounts",
+                "options": "rw,relatime,attr2,inode64,noquota,bind",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            },
+            {
+                "block_available": 567187133,
+                "block_size": 4096,
+                "block_total": 1048320000,
+                "block_used": 481132867,
+                "device": "/dev/vdc",
+                "fstype": "xfs",
+                "inode_available": 417108244,
+                "inode_total": 419430400,
+                "inode_used": 2322156,
+                "mount": "/datasource/docker/containers/a1880a8619b11af84934a1bcf2c7775381c5db9066196a4796250a18b077631f/mounts",
+                "options": "rw,relatime,attr2,inode64,noquota,bind",
+                "size_available": 2323198496768,
+                "size_total": 4293918720000,
+                "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+            }
+        ],
+        "ansible_nodename": "ds3",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "yum",
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "1",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "2",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "3",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "4",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "5",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "6",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "7",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "8",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "9",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "10",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "11",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "12",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "13",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "14",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "15",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "16",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "17",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "18",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "19",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "20",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "21",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "22",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "23",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "24",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "25",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "26",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "27",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "28",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "29",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "30",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+            "31",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz"
+        ],
+        "ansible_processor_cores": 16,
+        "ansible_processor_count": 1,
+        "ansible_processor_threads_per_core": 2,
+        "ansible_processor_vcpus": 32,
+        "ansible_product_name": "Alibaba Cloud ECS",
+        "ansible_product_serial": "eaf2e3c0-98bf-4dd8-8d67-55b07be0f937",
+        "ansible_product_uuid": "EAF2E3C0-98BF-4DD8-8D67-55B07BE0F937",
+        "ansible_product_version": "pc-i440fx-2.1",
+        "ansible_python": {
+            "executable": "/usr/bin/python",
+            "has_sslcontext": true,
+            "type": "CPython",
+            "version": {
+                "major": 2,
+                "micro": 5,
+                "minor": 7,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                2,
+                7,
+                5,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "2.7.5",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "status": "disabled"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAI2FPDoPvqZjuGjjFc1XzFg+8ugzeDZRbM2wUDnuc/aP9FloHSBGmoGfTwodVoGngUYgqm0drpiCE1IR91IOPzRKq+VR0cqwi/Zb8Fs2Qhej99/WaeKLZhAJawaJqxcjDe3B7AlSJIOJV60WnmpG498MCTy8kzQbV6Bte7f6d8qPAAAAFQCAjvEWSVT+DfK1e1YrS3HqqJyUgwAAAIBFI4ZXMa9kplYEtxOCHhX0xVTeQyGRKMyPOL1RzkPEj57HZGiC+dK4JiFL4yjYARL940eXEX0mTrceT16newQWbnb0FJc6MaDnXFoPVDS6GEUIv9Ge32yi0Kw8WZZdeTHYlT3nB0uoS391hnEZjT36lHDb90ryFNngG1RdlPutZwAAAIAEpuctCdZxjEAVv9BNXLCOeXsI42ut1/KnIBcolVw5GMndnmm6A3kQ1H2AkdZMgMnN3LhmnUCg3V+2QsXEyqpTJNpqLHqqwX+TqzD/cy8+XwAvPhmwy0DTbyJs3DSSZbYyH8VssW+u1rsIAkHscirLjmYqTDSAl8WNnHiD2MIdhw==",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBO12eibt8pwcqzOfFQa8JCq3OyMeaxf0Cn3rURpYNXnyK1j6iEUV+Pyw9AP/kMWCNjdZsxZ3b4sv10RbgutlQHE=",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIK47r+7ZyhCqPRnSTRGcHyGram7AdUqSade1FcOM6zGu",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDRop4B3L/T13Oi5aYRx+4HAcbPpTwT+QyOmbUqP2gd9C6GZi8wgj/p6LCTfaS0IYenQMk0mB3si8rkjbLDTQ2GEoMQx/e6JvfEKbQD6T2wooiqhb9wIoeJK97SveFu7sJxcuPtYUbuXz8Ac9eTtv2bXUpkR2B1/0d+OdmPzU8rduQANZhz+KKI+XxIGAB+LodJG1uPdHUV74tZuGdOFr+erWdpshYu519YB1cxdZ5I9LpsX4csk15DFlXjxYk4PG8dJpQaz1j/XrjBkVkIZY8YaLPQvTsxx/YprQQLSpi/g6bkMqB//y67g0FXhdHjcn+vaUYfwWe9shtXCrKzra9R",
+        "ansible_swapfree_mb": 0,
+        "ansible_swaptotal_mb": 0,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_dac_read_search",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_linux_immutable",
+            "cap_net_bind_service",
+            "cap_net_broadcast",
+            "cap_net_admin",
+            "cap_net_raw",
+            "cap_ipc_lock",
+            "cap_ipc_owner",
+            "cap_sys_module",
+            "cap_sys_rawio",
+            "cap_sys_chroot",
+            "cap_sys_ptrace",
+            "cap_sys_pacct",
+            "cap_sys_admin",
+            "cap_sys_boot",
+            "cap_sys_nice",
+            "cap_sys_resource",
+            "cap_sys_time",
+            "cap_sys_tty_config",
+            "cap_mknod",
+            "cap_lease",
+            "cap_audit_write",
+            "cap_audit_control",
+            "cap_setfcap",
+            "cap_mac_override",
+            "cap_mac_admin",
+            "cap_syslog",
+            "35",
+            "36+ep"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "Alibaba Cloud",
+        "ansible_uptime_seconds": 3607209,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_veth44c9526": {
+            "active": true,
+            "device": "veth44c9526",
+            "features": {
+                "busy_poll": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on",
+                "rx_fcs": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "on",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "on",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on",
+                "tx_checksumming": "on",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "on",
+                "tx_gre_segmentation": "on",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipip_segmentation": "on",
+                "tx_lockless": "on [fixed]",
+                "tx_mpls_segmentation": "on",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "on",
+                "tx_sctp_segmentation": "on",
+                "tx_sit_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_tnl_csum_segmentation": "on",
+                "tx_udp_tnl_segmentation": "on",
+                "tx_vlan_offload": "on",
+                "tx_vlan_stag_hw_insert": "on",
+                "udp_fragmentation_offload": "on",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "macaddress": "82:be:2f:ac:db:fa",
+            "mtu": 1500,
+            "promisc": true,
+            "speed": 10000,
+            "timestamping": [
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_vethb6c352d": {
+            "active": true,
+            "device": "vethb6c352d",
+            "features": {
+                "busy_poll": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on",
+                "rx_fcs": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "on",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "on",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on",
+                "tx_checksumming": "on",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "on",
+                "tx_gre_segmentation": "on",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipip_segmentation": "on",
+                "tx_lockless": "on [fixed]",
+                "tx_mpls_segmentation": "on",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "on",
+                "tx_sctp_segmentation": "on",
+                "tx_sit_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_tnl_csum_segmentation": "on",
+                "tx_udp_tnl_segmentation": "on",
+                "tx_vlan_offload": "on",
+                "tx_vlan_stag_hw_insert": "on",
+                "udp_fragmentation_offload": "on",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "macaddress": "ba:86:0a:c9:84:5b",
+            "mtu": 1500,
+            "promisc": true,
+            "speed": 10000,
+            "timestamping": [
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_vetheea7fb2": {
+            "active": true,
+            "device": "vetheea7fb2",
+            "features": {
+                "busy_poll": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on",
+                "rx_fcs": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "on",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "on",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on",
+                "tx_checksumming": "on",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "on",
+                "tx_gre_segmentation": "on",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipip_segmentation": "on",
+                "tx_lockless": "on [fixed]",
+                "tx_mpls_segmentation": "on",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "on",
+                "tx_sctp_segmentation": "on",
+                "tx_sit_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_tnl_csum_segmentation": "on",
+                "tx_udp_tnl_segmentation": "on",
+                "tx_vlan_offload": "on",
+                "tx_vlan_stag_hw_insert": "on",
+                "udp_fragmentation_offload": "on",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "macaddress": "ae:ce:8f:44:e3:e1",
+            "mtu": 1500,
+            "promisc": true,
+            "speed": 10000,
+            "timestamping": [
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "kvm",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2020-06-02 14:04:26,771 p=38592 u=FLS |  ERROR! 'tag' is not a valid attribute for a Handler
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 57, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: debug_demo
+    ^ here
+
+This error can be suppressed as a warning using the "invalid_task_attribute_failed" configuration
+2020-06-02 14:04:52,598 p=38900 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:04:52,603 p=38900 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:05:15,932 p=39111 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:05:15,936 p=39111 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:06:08,238 p=39624 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:06:08,243 p=39624 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:06:35,309 p=39933 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:06:35,337 p=39933 u=FLS |  TASK [debug_demo] ***************************************************************************
+2020-06-02 14:06:35,380 p=39933 u=FLS |  ok: [ds3] => {
+    "msg": "Remote host memory is: {'free': 1141, 'total': 257787, 'used': 256646}"
+}
+2020-06-02 14:06:35,381 p=39933 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:06:35,382 p=39933 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 14:39:08,213 p=58566 u=FLS |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 50, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: prompt_useage
+    ^ here
+
+2020-06-02 14:40:55,137 p=59385 u=FLS |   [ERROR]: User interrupted execution
+
+2020-06-02 14:42:31,134 p=60504 u=FLS |   [ERROR]: User interrupted execution
+
+2020-06-02 14:42:43,123 p=60609 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:42:43,160 p=60609 u=FLS |  TASK [debug] ********************************************************************************
+2020-06-02 14:42:43,178 p=60609 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'name'. String: your name is {{your name}} and your age is {{you age}}"}
+2020-06-02 14:42:43,180 p=60609 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 14:42:43,180 p=60609 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:42:43,180 p=60609 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 14:43:01,838 p=60818 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:43:01,871 p=60818 u=FLS |  TASK [debug] ********************************************************************************
+2020-06-02 14:43:01,890 p=60818 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'name'. String: your name is {{your name}} and your age is {{you age}}"}
+2020-06-02 14:43:01,891 p=60818 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 14:43:01,892 p=60818 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:43:01,892 p=60818 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 14:43:40,595 p=61133 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:43:40,619 p=61133 u=FLS |  TASK [debug] ********************************************************************************
+2020-06-02 14:43:40,636 p=61133 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'name'. String: your name is {{your name}} and your age is {{you age}}"}
+2020-06-02 14:43:40,638 p=61133 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 14:43:40,638 p=61133 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:43:40,638 p=61133 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 14:44:19,296 p=61544 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:44:19,319 p=61544 u=FLS |  TASK [debug_prompt] *************************************************************************
+2020-06-02 14:44:19,336 p=61544 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'name'. String: your name is {{your name}} and your age is {{you age}}"}
+2020-06-02 14:44:19,338 p=61544 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 14:44:19,338 p=61544 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:44:19,338 p=61544 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 14:44:50,350 p=61854 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:44:50,373 p=61854 u=FLS |  TASK [debug_prompt] *************************************************************************
+2020-06-02 14:44:50,390 p=61854 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'name'. String: your name is {{your name}} and your age is {{you age}}"}
+2020-06-02 14:44:50,393 p=61854 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 14:44:50,393 p=61854 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:44:50,393 p=61854 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 14:45:32,501 p=62266 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:45:32,527 p=62266 u=FLS |  TASK [debug_prompt] *************************************************************************
+2020-06-02 14:45:32,572 p=62266 u=FLS |  ok: [ds3] => {
+    "msg": "your name is a and your age is f"
+}
+2020-06-02 14:45:32,574 p=62266 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:45:32,574 p=62266 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 14:46:13,086 p=62680 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 14:46:13,114 p=62680 u=FLS |  TASK [debug_prompt] *************************************************************************
+2020-06-02 14:46:13,159 p=62680 u=FLS |  ok: [ds3] => {
+    "msg": "your name is a and your age is b"
+}
+2020-06-02 14:46:13,161 p=62680 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:46:13,161 p=62680 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 14:50:55,199 p=65429 u=FLS |  ERROR! Missing target hosts
+2020-06-02 14:51:02,881 p=65533 u=FLS |  ERROR! Missing target hosts
+2020-06-02 14:53:32,506 p=66962 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/create_system_user.yaml': line 25, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        generate_ssh_key: yes
+    tags: create_system_user
+    ^ here
+
+2020-06-02 14:54:14,684 p=67170 u=FLS |  ERROR! crypt.crypt not supported on Mac OS X/Darwin, install passlib python module
+2020-06-02 14:54:52,885 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 14:55:02,130 passlib.registry registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2020-06-02 14:55:02,141 p=67790 u=FLS |  PLAY [test] *********************************************************************************
+2020-06-02 14:55:02,167 p=67790 u=FLS |  TASK [create system user] *******************************************************************
+2020-06-02 14:55:03,829 p=67790 u=FLS |   [WARNING]: The input password appears not to have been hashed. The 'password' argument must
+be encrypted for this module to work properly.
+
+2020-06-02 14:55:03,829 p=67790 u=FLS |  changed: [ds3]
+2020-06-02 14:55:03,856 p=67790 u=FLS |  TASK [add sudoers] **************************************************************************
+2020-06-02 14:55:04,593 p=67790 u=FLS |  changed: [ds3]
+2020-06-02 14:55:04,595 p=67790 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:55:04,595 p=67790 u=FLS |  ds3                        : ok=2    changed=2    unreachable=0    failed=0   
+2020-06-02 14:57:50,594 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 14:57:55,381 passlib.registry registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2020-06-02 14:57:55,397 p=69558 u=FLS |  PLAY [test] *********************************************************************************
+2020-06-02 14:57:55,422 p=69558 u=FLS |  TASK [create system user] *******************************************************************
+2020-06-02 14:57:57,002 p=69558 u=FLS |  changed: [ds3]
+2020-06-02 14:57:57,020 p=69558 u=FLS |  TASK [add sudoers] **************************************************************************
+2020-06-02 14:57:57,759 p=69558 u=FLS |  changed: [ds3]
+2020-06-02 14:57:57,761 p=69558 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 14:57:57,761 p=69558 u=FLS |  ds3                        : ok=2    changed=2    unreachable=0    failed=0   
+2020-06-02 15:00:23,279 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:00:25,961 p=71016 u=FLS |  PLAY [delete system user] *******************************************************************
+2020-06-02 15:00:25,990 p=71016 u=FLS |  TASK [check home file] **********************************************************************
+2020-06-02 15:00:26,889 p=71016 u=FLS |  changed: [ds3]
+2020-06-02 15:00:26,915 p=71016 u=FLS |  TASK [show check_home_file_result] **********************************************************
+2020-06-02 15:00:26,952 p=71016 u=FLS |  ok: [ds3] => {
+    "check_home_file_result.stdout": ""
+}
+2020-06-02 15:00:26,970 p=71016 u=FLS |  TASK [wait for confierm delete] *************************************************************
+2020-06-02 15:00:27,000 p=71016 u=FLS |  [wait for confierm delete]
+Warning! Detected slight issue. ENTER to continue CTRL-C a to quit:
+2020-06-02 15:00:31,811 p=71016 u=FLS |  ok: [ds3]
+2020-06-02 15:00:31,827 p=71016 u=FLS |  TASK [delete system user] *******************************************************************
+2020-06-02 15:00:32,698 p=71016 u=FLS |  changed: [ds3]
+2020-06-02 15:00:32,701 p=71016 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:00:32,701 p=71016 u=FLS |  ds3                        : ok=4    changed=2    unreachable=0    failed=0   
+2020-06-02 15:03:25,608 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:03:39,559 p=72880 u=FLS |   [ERROR]: User interrupted execution
+
+2020-06-02 15:03:45,149 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:03:45,155 p=73085 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:03:45,182 p=73085 u=FLS |  TASK [Passing Variables On The Command Line] ************************************************
+2020-06-02 15:03:45,223 p=73085 u=FLS |  ok: [ds3] => {
+    "msg": "nihao"
+}
+2020-06-02 15:03:45,224 p=73085 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:03:45,224 p=73085 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:04:52,651 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:04:52,658 p=73700 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:04:52,685 p=73700 u=FLS |  TASK [Passing Variables On The Command Line] ************************************************
+2020-06-02 15:04:52,727 p=73700 u=FLS |  ok: [ds3] => {
+    "msg": "test"
+}
+2020-06-02 15:04:52,729 p=73700 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:04:52,729 p=73700 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:05:15,064 p=73911 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 72, column 28, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    debug:
+      msg: "{{pass_var}}"  {{pass_var1=}}
+                           ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2020-06-02 15:05:29,629 p=74116 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 72, column 28, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    debug:
+      msg: "{{pass_var}}"  "{{pass_var1=}}"
+                           ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2020-06-02 15:05:50,908 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:05:50,913 p=74327 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:05:50,940 p=74327 u=FLS |  TASK [Passing Variables On The Command Line] ************************************************
+2020-06-02 15:05:50,964 p=74327 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got '='. String: \"{{pass_var}}\"  {{pass_var1=}}"}
+2020-06-02 15:05:50,966 p=74327 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:05:50,966 p=74327 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:05:50,966 p=74327 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:06:05,955 p=74437 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 72, column 28, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    debug:
+      msg: "{{pass_var}}"  {{pass_var1}}
+                           ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2020-06-02 15:06:15,336 p=74544 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 72, column 27, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    debug:
+      msg: "{{pass_var}}" and {{pass_var1}}
+                          ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2020-06-02 15:06:26,814 p=74651 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 72, column 27, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    debug:
+      msg: "{{pass_var}}" and "{{pass_var1}}"
+                          ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2020-06-02 15:06:33,991 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:06:33,998 p=74758 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:06:34,024 p=74758 u=FLS |  TASK [Passing Variables On The Command Line] ************************************************
+2020-06-02 15:06:34,070 p=74758 u=FLS |  ok: [ds3] => {
+    "msg": "test and test2"
+}
+2020-06-02 15:06:34,071 p=74758 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:06:34,071 p=74758 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:15:43,768 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:15:43,774 p=80025 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:15:43,801 p=80025 u=FLS |  TASK [with_items1] **************************************************************************
+2020-06-02 15:15:43,846 p=80025 u=FLS |  ok: [ds3] => (item=a) => {
+    "msg": "a"
+}
+2020-06-02 15:15:43,848 p=80025 u=FLS |  ok: [ds3] => (item=b) => {
+    "msg": "b"
+}
+2020-06-02 15:15:43,851 p=80025 u=FLS |  ok: [ds3] => (item=c) => {
+    "msg": "c"
+}
+2020-06-02 15:15:43,855 p=80025 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:15:43,855 p=80025 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:16:33,325 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:16:33,330 p=80541 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:16:33,360 p=80541 u=FLS |  TASK [with_items1] **************************************************************************
+2020-06-02 15:16:33,411 p=80541 u=FLS |  ok: [ds3] => (item=a) => {
+    "msg": "a"
+}
+2020-06-02 15:16:33,416 p=80541 u=FLS |  ok: [ds3] => (item=b) => {
+    "msg": "b"
+}
+2020-06-02 15:16:33,420 p=80541 u=FLS |  ok: [ds3] => (item=c) => {
+    "msg": "c"
+}
+2020-06-02 15:16:33,424 p=80541 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:16:33,424 p=80541 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:16:51,074 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:16:51,080 p=80754 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:16:51,110 p=80754 u=FLS |  TASK [with_items2] **************************************************************************
+2020-06-02 15:16:51,155 p=80754 u=FLS |  ok: [ds3] => (item={'test1': 'a', 'test2': 'b'}) => {
+    "msg": "a"
+}
+2020-06-02 15:16:51,157 p=80754 u=FLS |  ok: [ds3] => (item={'test1': 'c', 'test2': 'd'}) => {
+    "msg": "c"
+}
+2020-06-02 15:16:51,161 p=80754 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:16:51,161 p=80754 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:19:17,066 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:19:17,073 p=82188 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:19:17,104 p=82188 u=FLS |  TASK [with_items3] **************************************************************************
+2020-06-02 15:19:17,997 p=82188 u=FLS |  changed: [ds3] => (item=/opt/a)
+2020-06-02 15:19:18,441 p=82188 u=FLS |  changed: [ds3] => (item=/opt/b)
+2020-06-02 15:19:18,907 p=82188 u=FLS |  changed: [ds3] => (item=/opt/c)
+2020-06-02 15:19:19,367 p=82188 u=FLS |  changed: [ds3] => (item=/opt/d)
+2020-06-02 15:19:19,372 p=82188 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:19:19,372 p=82188 u=FLS |  ds3                        : ok=1    changed=1    unreachable=0    failed=0   
+2020-06-02 15:23:56,495 p=84893 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 111, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    with_items:
+    - "ls /opt"
+   ^ here
+
+2020-06-02 15:24:33,111 p=85302 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 113, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - "ls /home"
+    register: returnvalue
+^ here
+
+2020-06-02 15:24:47,962 p=85410 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 113, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      - "ls /home"
+    register: returnvalue
+^ here
+
+2020-06-02 15:25:11,995 p=85715 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 113, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      - "ls /home"
+    register: returnvalue
+^ here
+
+2020-06-02 15:26:06,247 p=86235 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 113, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      - "ls /home"
+    register: returnvalue
+^ here
+
+2020-06-02 15:26:30,925 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:26:30,931 p=86450 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:26:30,936 p=86450 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:26:42,086 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:26:42,092 p=86556 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:26:42,122 p=86556 u=FLS |  TASK [with_item4] ***************************************************************************
+2020-06-02 15:26:42,998 p=86556 u=FLS |  changed: [ds3] => (item=ls /opt)
+2020-06-02 15:26:43,516 p=86556 u=FLS |  changed: [ds3] => (item=ls /home)
+2020-06-02 15:26:43,544 p=86556 u=FLS |  TASK [debug] ********************************************************************************
+2020-06-02 15:26:43,594 p=86556 u=FLS |  ok: [ds3] => (item={'changed': True, 'end': '2020-06-02 15:26:42.928798', 'stdout': 'a\napache-maven-3.5.3\napache-maven-3.5.3-bin.tar.gz\nb\nc\nd\nmaven', 'cmd': 'ls /opt', 'rc': 0, 'start': '2020-06-02 15:26:42.875962', 'stderr': '', 'delta': '0:00:00.052836', 'invocation': {'module_args': {'creates': None, 'executable': None, '_uses_shell': True, '_raw_params': 'ls /opt', 'removes': None, 'argv': None, 'warn': True, 'chdir': None, 'stdin': None}}, '_ansible_parsed': True, 'stdout_lines': ['a', 'apache-maven-3.5.3', 'apache-maven-3.5.3-bin.tar.gz', 'b', 'c', 'd', 'maven'], 'stderr_lines': [], '_ansible_no_log': False, 'failed': False, 'item': 'ls /opt', '_ansible_item_result': True, '_ansible_ignore_errors': None, '_ansible_item_label': 'ls /opt'}) => {
+    "msg": "a\napache-maven-3.5.3\napache-maven-3.5.3-bin.tar.gz\nb\nc\nd\nmaven"
+}
+2020-06-02 15:26:43,597 p=86556 u=FLS |  ok: [ds3] => (item={'changed': True, 'end': '2020-06-02 15:26:43.416057', 'stdout': 'A_Gorilla\nelasticsearch\nfanliusong\ntidb', 'cmd': 'ls /home', 'rc': 0, 'start': '2020-06-02 15:26:43.366072', 'stderr': '', 'delta': '0:00:00.049985', 'invocation': {'module_args': {'creates': None, 'executable': None, '_uses_shell': True, '_raw_params': 'ls /home', 'removes': None, 'argv': None, 'warn': True, 'chdir': None, 'stdin': None}}, '_ansible_parsed': True, 'stdout_lines': ['A_Gorilla', 'elasticsearch', 'fanliusong', 'tidb'], 'stderr_lines': [], '_ansible_no_log': False, 'failed': False, 'item': 'ls /home', '_ansible_item_result': True, '_ansible_ignore_errors': None, '_ansible_item_label': 'ls /home'}) => {
+    "msg": "A_Gorilla\nelasticsearch\nfanliusong\ntidb"
+}
+2020-06-02 15:26:43,601 p=86556 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:26:43,601 p=86556 u=FLS |  ds3                        : ok=2    changed=1    unreachable=0    failed=0   
+2020-06-02 15:30:47,848 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:30:47,854 p=89030 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:30:47,881 p=89030 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:30:47,948 p=89030 u=FLS |  ok: [ds3] => (item=1) => {
+    "msg": 1
+}
+2020-06-02 15:30:47,954 p=89030 u=FLS |  ok: [ds3] => (item=2) => {
+    "msg": 2
+}
+2020-06-02 15:30:47,954 p=89030 u=FLS |  ok: [ds3] => (item=3) => {
+    "msg": 3
+}
+2020-06-02 15:30:47,955 p=89030 u=FLS |  ok: [ds3] => (item=4) => {
+    "msg": 4
+}
+2020-06-02 15:30:47,956 p=89030 u=FLS |  ok: [ds3] => (item=5) => {
+    "msg": 5
+}
+2020-06-02 15:30:47,960 p=89030 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:30:47,960 p=89030 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:30:56,775 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:30:56,783 p=89039 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:30:56,818 p=89039 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:30:56,880 p=89039 u=FLS |  ok: [ds3] => (item=[1, 2, 3]) => {
+    "msg": [
+        1,
+        2,
+        3
+    ]
+}
+2020-06-02 15:30:56,885 p=89039 u=FLS |  ok: [ds3] => (item=[4, 5]) => {
+    "msg": [
+        4,
+        5
+    ]
+}
+2020-06-02 15:30:56,889 p=89039 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:30:56,890 p=89039 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:31:25,658 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:31:25,664 p=89353 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:31:25,695 p=89353 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:31:25,751 p=89353 u=FLS |  ok: [ds3] => (item=1) => {
+    "msg": 1
+}
+2020-06-02 15:31:25,752 p=89353 u=FLS |  ok: [ds3] => (item=2) => {
+    "msg": 2
+}
+2020-06-02 15:31:25,755 p=89353 u=FLS |  ok: [ds3] => (item=3) => {
+    "msg": 3
+}
+2020-06-02 15:31:25,757 p=89353 u=FLS |  ok: [ds3] => (item=4) => {
+    "msg": 4
+}
+2020-06-02 15:31:25,758 p=89353 u=FLS |  ok: [ds3] => (item=5) => {
+    "msg": 5
+}
+2020-06-02 15:31:25,762 p=89353 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:31:25,762 p=89353 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:32:01,966 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:32:01,972 p=89768 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:32:02,000 p=89768 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:32:02,046 p=89768 u=FLS |  ok: [ds3] => (item=[1, 4]) => {
+    "msg": [
+        1,
+        4
+    ]
+}
+2020-06-02 15:32:02,049 p=89768 u=FLS |  ok: [ds3] => (item=[2, 5]) => {
+    "msg": [
+        2,
+        5
+    ]
+}
+2020-06-02 15:32:02,054 p=89768 u=FLS |  ok: [ds3] => (item=[3, 6]) => {
+    "msg": [
+        3,
+        6
+    ]
+}
+2020-06-02 15:32:02,059 p=89768 u=FLS |  ok: [ds3] => (item=[None, 7]) => {
+    "msg": [
+        null,
+        7
+    ]
+}
+2020-06-02 15:32:02,063 p=89768 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:32:02,063 p=89768 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:34:05,747 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:34:05,753 p=90895 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:34:05,783 p=90895 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:34:05,831 p=90895 u=FLS |  ok: [ds3] => (item=[1, 4]) => {
+    "msg": [
+        1,
+        4
+    ]
+}
+2020-06-02 15:34:05,835 p=90895 u=FLS |  ok: [ds3] => (item=[1, 5]) => {
+    "msg": [
+        1,
+        5
+    ]
+}
+2020-06-02 15:34:05,842 p=90895 u=FLS |  ok: [ds3] => (item=[1, 6]) => {
+    "msg": [
+        1,
+        6
+    ]
+}
+2020-06-02 15:34:05,847 p=90895 u=FLS |  ok: [ds3] => (item=[1, 7]) => {
+    "msg": [
+        1,
+        7
+    ]
+}
+2020-06-02 15:34:05,854 p=90895 u=FLS |  ok: [ds3] => (item=[2, 4]) => {
+    "msg": [
+        2,
+        4
+    ]
+}
+2020-06-02 15:34:05,859 p=90895 u=FLS |  ok: [ds3] => (item=[2, 5]) => {
+    "msg": [
+        2,
+        5
+    ]
+}
+2020-06-02 15:34:05,866 p=90895 u=FLS |  ok: [ds3] => (item=[2, 6]) => {
+    "msg": [
+        2,
+        6
+    ]
+}
+2020-06-02 15:34:05,872 p=90895 u=FLS |  ok: [ds3] => (item=[2, 7]) => {
+    "msg": [
+        2,
+        7
+    ]
+}
+2020-06-02 15:34:05,880 p=90895 u=FLS |  ok: [ds3] => (item=[3, 4]) => {
+    "msg": [
+        3,
+        4
+    ]
+}
+2020-06-02 15:34:05,888 p=90895 u=FLS |  ok: [ds3] => (item=[3, 5]) => {
+    "msg": [
+        3,
+        5
+    ]
+}
+2020-06-02 15:34:05,896 p=90895 u=FLS |  ok: [ds3] => (item=[3, 6]) => {
+    "msg": [
+        3,
+        6
+    ]
+}
+2020-06-02 15:34:05,902 p=90895 u=FLS |  ok: [ds3] => (item=[3, 7]) => {
+    "msg": [
+        3,
+        7
+    ]
+}
+2020-06-02 15:34:05,914 p=90895 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:34:05,914 p=90895 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:36:00,277 p=92015 u=FLS |  ERROR! you must specify a value when using with_cartesian
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 121, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: with_items5
+    ^ here
+
+2020-06-02 15:36:13,193 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:36:13,199 p=92220 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:36:13,225 p=92220 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:36:13,273 p=92220 u=FLS |  ok: [ds3] => (item=[0, 1]) => {
+    "msg": [
+        0,
+        1
+    ]
+}
+2020-06-02 15:36:13,279 p=92220 u=FLS |  ok: [ds3] => (item=[1, 2]) => {
+    "msg": [
+        1,
+        2
+    ]
+}
+2020-06-02 15:36:13,293 p=92220 u=FLS |  ok: [ds3] => (item=[2, 3]) => {
+    "msg": [
+        2,
+        3
+    ]
+}
+2020-06-02 15:36:13,302 p=92220 u=FLS |  ok: [ds3] => (item=[3, 4]) => {
+    "msg": [
+        3,
+        4
+    ]
+}
+2020-06-02 15:36:13,309 p=92220 u=FLS |  ok: [ds3] => (item=[4, 5]) => {
+    "msg": [
+        4,
+        5
+    ]
+}
+2020-06-02 15:36:13,314 p=92220 u=FLS |  ok: [ds3] => (item=[5, 6]) => {
+    "msg": [
+        5,
+        6
+    ]
+}
+2020-06-02 15:36:13,320 p=92220 u=FLS |  ok: [ds3] => (item=[6, 7]) => {
+    "msg": [
+        6,
+        7
+    ]
+}
+2020-06-02 15:36:13,324 p=92220 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:36:13,325 p=92220 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:36:42,609 p=92530 u=FLS |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 130, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - [ test1, test2 ]
+    - [ test3, [ test4, test5 ] ]
+^ here
+
+2020-06-02 15:36:53,120 p=92637 u=FLS |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 131, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - [ test3, [ test4, test5 ] ]
+    - [ test6 ]
+^ here
+
+2020-06-02 15:37:20,563 p=92851 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected ',' or ']'
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 130, column 16, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - [ test1, test2 ]
+    - [ test3, [ test4, test5 ] ]
+               ^ here
+
+2020-06-02 15:37:30,398 p=92959 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected ',' or ']'
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 130, column 31, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - [ test1, test2 ]
+    - [ test3,[ test4, test5 ] ]
+                              ^ here
+
+2020-06-02 15:37:38,038 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:37:38,044 p=93065 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:37:38,071 p=93065 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:37:38,119 p=93065 u=FLS |  ok: [ds3] => (item=[0, '\xa0test1']) => {
+    "msg": [
+        0,
+        " test1"
+    ]
+}
+2020-06-02 15:37:38,122 p=93065 u=FLS |  ok: [ds3] => (item=[1, '\xa0test2\xa0']) => {
+    "msg": [
+        1,
+        " test2 "
+    ]
+}
+2020-06-02 15:37:38,127 p=93065 u=FLS |  ok: [ds3] => (item=[2, '\xa0test3']) => {
+    "msg": [
+        2,
+        " test3"
+    ]
+}
+2020-06-02 15:37:38,134 p=93065 u=FLS |  ok: [ds3] => (item=[3, ['\xa0test4', '\xa0test5']]) => {
+    "msg": [
+        3,
+        [
+            " test4",
+            " test5"
+        ]
+    ]
+}
+2020-06-02 15:37:38,140 p=93065 u=FLS |  ok: [ds3] => (item=[4, '\xa0test6\xa0']) => {
+    "msg": [
+        4,
+        " test6 "
+    ]
+}
+2020-06-02 15:37:38,143 p=93065 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:37:38,143 p=93065 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:37:53,230 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:37:53,235 p=93174 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:37:53,259 p=93174 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:37:53,310 p=93174 u=FLS |  ok: [ds3] => (item=['\xa0test1', '\xa0test3', '\xa0test6\xa0']) => {
+    "msg": [
+        " test1",
+        " test3",
+        " test6 "
+    ]
+}
+2020-06-02 15:37:53,313 p=93174 u=FLS |  ok: [ds3] => (item=['\xa0test1', '\xa0test4', '\xa0test5', '\xa0test6\xa0']) => {
+    "msg": [
+        " test1",
+        " test4",
+        " test5",
+        " test6 "
+    ]
+}
+2020-06-02 15:37:53,319 p=93174 u=FLS |  ok: [ds3] => (item=['\xa0test2\xa0', '\xa0test3', '\xa0test6\xa0']) => {
+    "msg": [
+        " test2 ",
+        " test3",
+        " test6 "
+    ]
+}
+2020-06-02 15:37:53,323 p=93174 u=FLS |  ok: [ds3] => (item=['\xa0test2\xa0', '\xa0test4', '\xa0test5', '\xa0test6\xa0']) => {
+    "msg": [
+        " test2 ",
+        " test4",
+        " test5",
+        " test6 "
+    ]
+}
+2020-06-02 15:37:53,326 p=93174 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:37:53,327 p=93174 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:38:12,647 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:38:12,652 p=93383 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:38:12,682 p=93383 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:38:12,737 p=93383 u=FLS |  ok: [ds3] => (item=test1) => {
+    "msg": "test1"
+}
+2020-06-02 15:38:12,739 p=93383 u=FLS |  ok: [ds3] => (item=test2) => {
+    "msg": "test2"
+}
+2020-06-02 15:38:12,745 p=93383 u=FLS |  ok: [ds3] => (item=test3) => {
+    "msg": "test3"
+}
+2020-06-02 15:38:12,749 p=93383 u=FLS |  ok: [ds3] => (item=test4) => {
+    "msg": "test4"
+}
+2020-06-02 15:38:12,752 p=93383 u=FLS |  ok: [ds3] => (item=test5) => {
+    "msg": "test5"
+}
+2020-06-02 15:38:12,756 p=93383 u=FLS |  ok: [ds3] => (item=test6) => {
+    "msg": "test6"
+}
+2020-06-02 15:38:12,760 p=93383 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:38:12,760 p=93383 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:41:06,432 p=95112 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 131, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - [ test1, test2 ]
+    ^ here
+
+2020-06-02 15:41:12,474 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:41:12,480 p=95122 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:41:12,511 p=95122 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:41:12,557 p=95122 u=FLS |  ok: [ds3] => (item=1) => {
+    "msg": "1"
+}
+2020-06-02 15:41:12,559 p=95122 u=FLS |  ok: [ds3] => (item=2) => {
+    "msg": "2"
+}
+2020-06-02 15:41:12,563 p=95122 u=FLS |  ok: [ds3] => (item=3) => {
+    "msg": "3"
+}
+2020-06-02 15:41:12,566 p=95122 u=FLS |  ok: [ds3] => (item=4) => {
+    "msg": "4"
+}
+2020-06-02 15:41:12,569 p=95122 u=FLS |  ok: [ds3] => (item=5) => {
+    "msg": "5"
+}
+2020-06-02 15:41:12,574 p=95122 u=FLS |  ok: [ds3] => (item=6) => {
+    "msg": "6"
+}
+2020-06-02 15:41:12,577 p=95122 u=FLS |  ok: [ds3] => (item=7) => {
+    "msg": "7"
+}
+2020-06-02 15:41:12,582 p=95122 u=FLS |  ok: [ds3] => (item=8) => {
+    "msg": "8"
+}
+2020-06-02 15:41:12,588 p=95122 u=FLS |  ok: [ds3] => (item=9) => {
+    "msg": "9"
+}
+2020-06-02 15:41:12,594 p=95122 u=FLS |  ok: [ds3] => (item=10) => {
+    "msg": "10"
+}
+2020-06-02 15:41:12,598 p=95122 u=FLS |  ok: [ds3] => (item=11) => {
+    "msg": "11"
+}
+2020-06-02 15:41:12,602 p=95122 u=FLS |  ok: [ds3] => (item=12) => {
+    "msg": "12"
+}
+2020-06-02 15:41:12,605 p=95122 u=FLS |  ok: [ds3] => (item=13) => {
+    "msg": "13"
+}
+2020-06-02 15:41:12,610 p=95122 u=FLS |  ok: [ds3] => (item=14) => {
+    "msg": "14"
+}
+2020-06-02 15:41:12,614 p=95122 u=FLS |  ok: [ds3] => (item=15) => {
+    "msg": "15"
+}
+2020-06-02 15:41:12,618 p=95122 u=FLS |  ok: [ds3] => (item=16) => {
+    "msg": "16"
+}
+2020-06-02 15:41:12,621 p=95122 u=FLS |  ok: [ds3] => (item=17) => {
+    "msg": "17"
+}
+2020-06-02 15:41:12,625 p=95122 u=FLS |  ok: [ds3] => (item=18) => {
+    "msg": "18"
+}
+2020-06-02 15:41:12,629 p=95122 u=FLS |  ok: [ds3] => (item=19) => {
+    "msg": "19"
+}
+2020-06-02 15:41:12,635 p=95122 u=FLS |  ok: [ds3] => (item=20) => {
+    "msg": "20"
+}
+2020-06-02 15:41:12,641 p=95122 u=FLS |  ok: [ds3] => (item=21) => {
+    "msg": "21"
+}
+2020-06-02 15:41:12,645 p=95122 u=FLS |  ok: [ds3] => (item=22) => {
+    "msg": "22"
+}
+2020-06-02 15:41:12,650 p=95122 u=FLS |  ok: [ds3] => (item=23) => {
+    "msg": "23"
+}
+2020-06-02 15:41:12,654 p=95122 u=FLS |  ok: [ds3] => (item=24) => {
+    "msg": "24"
+}
+2020-06-02 15:41:12,658 p=95122 u=FLS |  ok: [ds3] => (item=25) => {
+    "msg": "25"
+}
+2020-06-02 15:41:12,661 p=95122 u=FLS |  ok: [ds3] => (item=26) => {
+    "msg": "26"
+}
+2020-06-02 15:41:12,666 p=95122 u=FLS |  ok: [ds3] => (item=27) => {
+    "msg": "27"
+}
+2020-06-02 15:41:12,668 p=95122 u=FLS |  ok: [ds3] => (item=28) => {
+    "msg": "28"
+}
+2020-06-02 15:41:12,673 p=95122 u=FLS |  ok: [ds3] => (item=29) => {
+    "msg": "29"
+}
+2020-06-02 15:41:12,677 p=95122 u=FLS |  ok: [ds3] => (item=30) => {
+    "msg": "30"
+}
+2020-06-02 15:41:12,681 p=95122 u=FLS |  ok: [ds3] => (item=31) => {
+    "msg": "31"
+}
+2020-06-02 15:41:12,687 p=95122 u=FLS |  ok: [ds3] => (item=32) => {
+    "msg": "32"
+}
+2020-06-02 15:41:12,692 p=95122 u=FLS |  ok: [ds3] => (item=33) => {
+    "msg": "33"
+}
+2020-06-02 15:41:12,698 p=95122 u=FLS |  ok: [ds3] => (item=34) => {
+    "msg": "34"
+}
+2020-06-02 15:41:12,702 p=95122 u=FLS |  ok: [ds3] => (item=35) => {
+    "msg": "35"
+}
+2020-06-02 15:41:12,707 p=95122 u=FLS |  ok: [ds3] => (item=36) => {
+    "msg": "36"
+}
+2020-06-02 15:41:12,712 p=95122 u=FLS |  ok: [ds3] => (item=37) => {
+    "msg": "37"
+}
+2020-06-02 15:41:12,714 p=95122 u=FLS |  ok: [ds3] => (item=38) => {
+    "msg": "38"
+}
+2020-06-02 15:41:12,719 p=95122 u=FLS |  ok: [ds3] => (item=39) => {
+    "msg": "39"
+}
+2020-06-02 15:41:12,722 p=95122 u=FLS |  ok: [ds3] => (item=40) => {
+    "msg": "40"
+}
+2020-06-02 15:41:12,726 p=95122 u=FLS |  ok: [ds3] => (item=41) => {
+    "msg": "41"
+}
+2020-06-02 15:41:12,731 p=95122 u=FLS |  ok: [ds3] => (item=42) => {
+    "msg": "42"
+}
+2020-06-02 15:41:12,735 p=95122 u=FLS |  ok: [ds3] => (item=43) => {
+    "msg": "43"
+}
+2020-06-02 15:41:12,739 p=95122 u=FLS |  ok: [ds3] => (item=44) => {
+    "msg": "44"
+}
+2020-06-02 15:41:12,743 p=95122 u=FLS |  ok: [ds3] => (item=45) => {
+    "msg": "45"
+}
+2020-06-02 15:41:12,747 p=95122 u=FLS |  ok: [ds3] => (item=46) => {
+    "msg": "46"
+}
+2020-06-02 15:41:12,751 p=95122 u=FLS |  ok: [ds3] => (item=47) => {
+    "msg": "47"
+}
+2020-06-02 15:41:12,755 p=95122 u=FLS |  ok: [ds3] => (item=48) => {
+    "msg": "48"
+}
+2020-06-02 15:41:12,759 p=95122 u=FLS |  ok: [ds3] => (item=49) => {
+    "msg": "49"
+}
+2020-06-02 15:41:12,763 p=95122 u=FLS |  ok: [ds3] => (item=50) => {
+    "msg": "50"
+}
+2020-06-02 15:41:12,767 p=95122 u=FLS |  ok: [ds3] => (item=51) => {
+    "msg": "51"
+}
+2020-06-02 15:41:12,770 p=95122 u=FLS |  ok: [ds3] => (item=52) => {
+    "msg": "52"
+}
+2020-06-02 15:41:12,774 p=95122 u=FLS |  ok: [ds3] => (item=53) => {
+    "msg": "53"
+}
+2020-06-02 15:41:12,779 p=95122 u=FLS |  ok: [ds3] => (item=54) => {
+    "msg": "54"
+}
+2020-06-02 15:41:12,782 p=95122 u=FLS |  ok: [ds3] => (item=55) => {
+    "msg": "55"
+}
+2020-06-02 15:41:12,787 p=95122 u=FLS |  ok: [ds3] => (item=56) => {
+    "msg": "56"
+}
+2020-06-02 15:41:12,793 p=95122 u=FLS |  ok: [ds3] => (item=57) => {
+    "msg": "57"
+}
+2020-06-02 15:41:12,798 p=95122 u=FLS |  ok: [ds3] => (item=58) => {
+    "msg": "58"
+}
+2020-06-02 15:41:12,801 p=95122 u=FLS |  ok: [ds3] => (item=59) => {
+    "msg": "59"
+}
+2020-06-02 15:41:12,805 p=95122 u=FLS |  ok: [ds3] => (item=60) => {
+    "msg": "60"
+}
+2020-06-02 15:41:12,810 p=95122 u=FLS |  ok: [ds3] => (item=61) => {
+    "msg": "61"
+}
+2020-06-02 15:41:12,812 p=95122 u=FLS |  ok: [ds3] => (item=62) => {
+    "msg": "62"
+}
+2020-06-02 15:41:12,818 p=95122 u=FLS |  ok: [ds3] => (item=63) => {
+    "msg": "63"
+}
+2020-06-02 15:41:12,822 p=95122 u=FLS |  ok: [ds3] => (item=64) => {
+    "msg": "64"
+}
+2020-06-02 15:41:12,826 p=95122 u=FLS |  ok: [ds3] => (item=65) => {
+    "msg": "65"
+}
+2020-06-02 15:41:12,829 p=95122 u=FLS |  ok: [ds3] => (item=66) => {
+    "msg": "66"
+}
+2020-06-02 15:41:12,834 p=95122 u=FLS |  ok: [ds3] => (item=67) => {
+    "msg": "67"
+}
+2020-06-02 15:41:12,838 p=95122 u=FLS |  ok: [ds3] => (item=68) => {
+    "msg": "68"
+}
+2020-06-02 15:41:12,843 p=95122 u=FLS |  ok: [ds3] => (item=69) => {
+    "msg": "69"
+}
+2020-06-02 15:41:12,849 p=95122 u=FLS |  ok: [ds3] => (item=70) => {
+    "msg": "70"
+}
+2020-06-02 15:41:12,851 p=95122 u=FLS |  ok: [ds3] => (item=71) => {
+    "msg": "71"
+}
+2020-06-02 15:41:12,856 p=95122 u=FLS |  ok: [ds3] => (item=72) => {
+    "msg": "72"
+}
+2020-06-02 15:41:12,860 p=95122 u=FLS |  ok: [ds3] => (item=73) => {
+    "msg": "73"
+}
+2020-06-02 15:41:12,864 p=95122 u=FLS |  ok: [ds3] => (item=74) => {
+    "msg": "74"
+}
+2020-06-02 15:41:12,868 p=95122 u=FLS |  ok: [ds3] => (item=75) => {
+    "msg": "75"
+}
+2020-06-02 15:41:12,871 p=95122 u=FLS |  ok: [ds3] => (item=76) => {
+    "msg": "76"
+}
+2020-06-02 15:41:12,875 p=95122 u=FLS |  ok: [ds3] => (item=77) => {
+    "msg": "77"
+}
+2020-06-02 15:41:12,879 p=95122 u=FLS |  ok: [ds3] => (item=78) => {
+    "msg": "78"
+}
+2020-06-02 15:41:12,883 p=95122 u=FLS |  ok: [ds3] => (item=79) => {
+    "msg": "79"
+}
+2020-06-02 15:41:12,887 p=95122 u=FLS |  ok: [ds3] => (item=80) => {
+    "msg": "80"
+}
+2020-06-02 15:41:12,893 p=95122 u=FLS |  ok: [ds3] => (item=81) => {
+    "msg": "81"
+}
+2020-06-02 15:41:12,897 p=95122 u=FLS |  ok: [ds3] => (item=82) => {
+    "msg": "82"
+}
+2020-06-02 15:41:12,901 p=95122 u=FLS |  ok: [ds3] => (item=83) => {
+    "msg": "83"
+}
+2020-06-02 15:41:12,906 p=95122 u=FLS |  ok: [ds3] => (item=84) => {
+    "msg": "84"
+}
+2020-06-02 15:41:12,910 p=95122 u=FLS |  ok: [ds3] => (item=85) => {
+    "msg": "85"
+}
+2020-06-02 15:41:12,916 p=95122 u=FLS |  ok: [ds3] => (item=86) => {
+    "msg": "86"
+}
+2020-06-02 15:41:12,922 p=95122 u=FLS |  ok: [ds3] => (item=87) => {
+    "msg": "87"
+}
+2020-06-02 15:41:12,927 p=95122 u=FLS |  ok: [ds3] => (item=88) => {
+    "msg": "88"
+}
+2020-06-02 15:41:12,929 p=95122 u=FLS |  ok: [ds3] => (item=89) => {
+    "msg": "89"
+}
+2020-06-02 15:41:12,935 p=95122 u=FLS |  ok: [ds3] => (item=90) => {
+    "msg": "90"
+}
+2020-06-02 15:41:12,939 p=95122 u=FLS |  ok: [ds3] => (item=91) => {
+    "msg": "91"
+}
+2020-06-02 15:41:12,944 p=95122 u=FLS |  ok: [ds3] => (item=92) => {
+    "msg": "92"
+}
+2020-06-02 15:41:12,948 p=95122 u=FLS |  ok: [ds3] => (item=93) => {
+    "msg": "93"
+}
+2020-06-02 15:41:12,952 p=95122 u=FLS |  ok: [ds3] => (item=94) => {
+    "msg": "94"
+}
+2020-06-02 15:41:12,958 p=95122 u=FLS |  ok: [ds3] => (item=95) => {
+    "msg": "95"
+}
+2020-06-02 15:41:12,961 p=95122 u=FLS |  ok: [ds3] => (item=96) => {
+    "msg": "96"
+}
+2020-06-02 15:41:12,965 p=95122 u=FLS |  ok: [ds3] => (item=97) => {
+    "msg": "97"
+}
+2020-06-02 15:41:12,969 p=95122 u=FLS |  ok: [ds3] => (item=98) => {
+    "msg": "98"
+}
+2020-06-02 15:41:12,972 p=95122 u=FLS |  ok: [ds3] => (item=99) => {
+    "msg": "99"
+}
+2020-06-02 15:41:12,976 p=95122 u=FLS |  ok: [ds3] => (item=100) => {
+    "msg": "100"
+}
+2020-06-02 15:41:12,981 p=95122 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:41:12,981 p=95122 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:42:03,626 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:42:03,633 p=95636 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:42:03,661 p=95636 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:42:03,712 p=95636 u=FLS |  ok: [ds3] => (item=['\xa0test1', '\xa0test2\xa0']) => {
+    "msg": [
+        " test1",
+        " test2 "
+    ]
+}
+2020-06-02 15:42:03,714 p=95636 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:42:03,714 p=95636 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:43:36,778 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:43:36,785 p=96559 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:43:36,818 p=96559 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:43:36,872 p=96559 u=FLS |  ok: [ds3] => (item={'key': 'name', 'value': 'fls'}) => {
+    "msg": {
+        "key": "name",
+        "value": "fls"
+    }
+}
+2020-06-02 15:43:36,877 p=96559 u=FLS |  ok: [ds3] => (item={'key': 'age', 'value': 15}) => {
+    "msg": {
+        "key": "age",
+        "value": 15
+    }
+}
+2020-06-02 15:43:36,880 p=96559 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:43:36,880 p=96559 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:47:10,753 p=98699 u=FLS |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 13, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: bob
+      gender: male
+^ here
+
+2020-06-02 15:47:24,672 p=98810 u=FLS |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 14, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      gender: male
+      hobby:
+^ here
+
+2020-06-02 15:47:43,549 p=99016 u=FLS |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 14, column 12, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      gender: male
+      hobby:
+           ^ here
+
+2020-06-02 15:47:50,552 p=99024 u=FLS |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 14, column 12, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      gender: male
+      hobby:
+           ^ here
+
+2020-06-02 15:48:14,002 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:48:14,008 p=99331 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:48:14,039 p=99331 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:48:14,063 p=99331 u=FLS |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: KeyError: 0
+2020-06-02 15:48:14,063 p=99331 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "Unexpected failure during module execution."}
+2020-06-02 15:48:14,064 p=99331 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:48:14,065 p=99331 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:48:14,065 p=99331 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:48:51,957 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:48:51,961 p=99643 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:48:51,983 p=99643 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:48:52,006 p=99643 u=FLS |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: KeyError: 0
+2020-06-02 15:48:52,007 p=99643 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "Unexpected failure during module execution."}
+2020-06-02 15:48:52,008 p=99643 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:48:52,008 p=99643 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:48:52,008 p=99643 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:48:56,701 p=99748 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 15:48:56,701 p=99748 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 15:48:56,712 p=99748 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 15:48:56,712 p=99748 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 15:48:56,713 p=99748 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 15:48:56,718 p=99748 u=FLS |  Parsed /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini inventory source with ini plugin
+2020-06-02 15:48:57,068 p=99748 u=FLS |  PLAYBOOK: handler.yaml **********************************************************************
+2020-06-02 15:48:57,069 p=99748 u=FLS |  1 plays in handler.yaml
+2020-06-02 15:48:57,087 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:48:57,093 p=99748 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:48:57,098 p=99748 u=FLS |  META: ran handlers
+2020-06-02 15:48:57,098 p=99748 u=FLS |  META: ran handlers
+2020-06-02 15:48:57,120 p=99748 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:48:57,120 p=99748 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 15:48:57,140 p=99748 u=FLS |  The full traceback is:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/ansible/executor/task_executor.py", line 98, in run
+    items = self._get_loop_items()
+  File "/usr/local/lib/python3.7/site-packages/ansible/executor/task_executor.py", line 241, in _get_loop_items
+    items = mylookup.run(terms=loop_terms, variables=self._job_vars, wantlist=True)
+  File "/usr/local/lib/python3.7/site-packages/ansible/plugins/lookup/subelements.py", line 103, in run
+    terms[0] = listify_lookup_plugin_terms(terms[0], templar=self._templar, loader=self._loader)
+KeyError: 0
+
+2020-06-02 15:48:57,141 p=99748 u=FLS |  fatal: [ds3]: FAILED! => {
+    "msg": "Unexpected failure during module execution."
+}
+2020-06-02 15:48:57,143 p=99748 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:48:57,143 p=99748 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:48:57,143 p=99748 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:49:26,195 p=181 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 15:49:26,196 p=181 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 15:49:26,211 p=181 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 15:49:26,212 p=181 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 15:49:26,212 p=181 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 15:49:26,217 p=181 u=FLS |  Parsed /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini inventory source with ini plugin
+2020-06-02 15:49:26,732 p=181 u=FLS |  PLAYBOOK: handler.yaml **********************************************************************
+2020-06-02 15:49:26,732 p=181 u=FLS |  1 plays in handler.yaml
+2020-06-02 15:49:26,774 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:49:26,779 p=181 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:49:26,782 p=181 u=FLS |  META: ran handlers
+2020-06-02 15:49:26,783 p=181 u=FLS |  META: ran handlers
+2020-06-02 15:49:26,807 p=181 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:49:26,807 p=181 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 15:49:26,828 p=181 u=FLS |  fatal: [ds3]: FAILED! => {
+    "msg": "subelements lookup expects a list of two or three items, "
+}
+2020-06-02 15:49:26,831 p=181 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:49:26,832 p=181 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:49:26,832 p=181 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:50:47,747 p=1015 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 15:50:47,747 p=1015 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 15:50:47,761 p=1015 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 15:50:47,761 p=1015 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 15:50:47,761 p=1015 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 15:50:47,768 p=1015 u=FLS |  Parsed /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini inventory source with ini plugin
+2020-06-02 15:50:47,790 p=1015 u=FLS |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 147, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    tags: with_items5
+    ^ here
+
+2020-06-02 15:51:02,736 p=1226 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 15:51:02,737 p=1226 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 15:51:02,748 p=1226 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 15:51:02,748 p=1226 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 15:51:02,749 p=1226 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 15:51:02,756 p=1226 u=FLS |  Parsed /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini inventory source with ini plugin
+2020-06-02 15:51:03,250 p=1226 u=FLS |  PLAYBOOK: handler.yaml **********************************************************************
+2020-06-02 15:51:03,251 p=1226 u=FLS |  1 plays in handler.yaml
+2020-06-02 15:51:03,293 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:51:03,299 p=1226 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:51:03,302 p=1226 u=FLS |  META: ran handlers
+2020-06-02 15:51:03,302 p=1226 u=FLS |  META: ran handlers
+2020-06-02 15:51:03,326 p=1226 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:51:03,326 p=1226 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 15:51:03,373 p=1226 u=FLS |  ok: [ds3] => (item=[{'name': 'bob', 'gender': 'male'}, 'Skateboard']) => {
+    "msg": [
+        {
+            "gender": "male",
+            "name": "bob"
+        },
+        "Skateboard"
+    ]
+}
+2020-06-02 15:51:03,377 p=1226 u=FLS |  ok: [ds3] => (item=[{'name': 'bob', 'gender': 'male'}, 'VideoGame']) => {
+    "msg": [
+        {
+            "gender": "male",
+            "name": "bob"
+        },
+        "VideoGame"
+    ]
+}
+2020-06-02 15:51:03,379 p=1226 u=FLS |  META: ran handlers
+2020-06-02 15:51:03,379 p=1226 u=FLS |  META: ran handlers
+2020-06-02 15:51:03,381 p=1226 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:51:03,381 p=1226 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 15:54:14,401 p=3069 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 15:54:14,401 p=3069 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 15:54:14,422 p=3069 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 15:54:14,422 p=3069 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 15:54:14,423 p=3069 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 15:54:14,430 p=3069 u=FLS |  Parsed /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini inventory source with ini plugin
+2020-06-02 15:54:14,965 p=3069 u=FLS |  PLAYBOOK: handler.yaml **********************************************************************
+2020-06-02 15:54:14,966 p=3069 u=FLS |  1 plays in handler.yaml
+2020-06-02 15:54:15,007 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:54:15,014 p=3069 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:54:15,017 p=3069 u=FLS |  META: ran handlers
+2020-06-02 15:54:15,018 p=3069 u=FLS |  META: ran handlers
+2020-06-02 15:54:15,040 p=3069 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:54:15,040 p=3069 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 15:54:15,058 p=3069 u=FLS |   [WARNING]: Unable to find '/tmp/aaa' in expected paths (use -vvvvv to see paths)
+
+2020-06-02 15:54:15,063 p=3069 u=FLS |  fatal: [ds3]: FAILED! => {
+    "msg": "could not locate file in lookup: /tmp/aaa"
+}
+2020-06-02 15:54:15,065 p=3069 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:54:15,065 p=3069 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:54:15,066 p=3069 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:54:23,684 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:54:23,689 p=3176 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:54:23,721 p=3176 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:54:23,733 p=3176 u=FLS |   [WARNING]: Unable to find '/tmp/aaa' in expected paths (use -vvvvv to see paths)
+
+2020-06-02 15:54:23,739 p=3176 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "could not locate file in lookup: /tmp/aaa"}
+2020-06-02 15:54:23,741 p=3176 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:54:23,741 p=3176 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:54:23,741 p=3176 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:54:52,908 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:54:52,915 p=3485 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:54:52,944 p=3485 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:54:52,959 p=3485 u=FLS |   [WARNING]: Unable to find '/tmp/aaa' in expected paths (use -vvvvv to see paths)
+
+2020-06-02 15:54:52,964 p=3485 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "could not locate file in lookup: /tmp/aaa"}
+2020-06-02 15:54:52,966 p=3485 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:54:52,966 p=3485 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:54:52,966 p=3485 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:55:47,462 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:55:47,467 p=4003 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:55:47,489 p=4003 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:55:47,501 p=4003 u=FLS |   [WARNING]: Unable to find '/tmp/aaa' in expected paths (use -vvvvv to see paths)
+
+2020-06-02 15:55:47,507 p=4003 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "could not locate file in lookup: /tmp/aaa"}
+2020-06-02 15:55:47,509 p=4003 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:55:47,509 p=4003 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:55:47,509 p=4003 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:56:27,338 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:56:27,344 p=4413 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:56:27,371 p=4413 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:56:27,385 p=4413 u=FLS |   [WARNING]: Unable to find '/tmp/aaa' in expected paths (use -vvvvv to see paths)
+
+2020-06-02 15:56:27,391 p=4413 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "could not locate file in lookup: /tmp/aaa"}
+2020-06-02 15:56:27,393 p=4413 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:56:27,393 p=4413 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:56:27,393 p=4413 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:56:36,385 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:56:36,389 p=4521 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:56:36,416 p=4521 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:56:36,429 p=4521 u=FLS |   [WARNING]: Unable to find '/tmp/aaa' in expected paths (use -vvvvv to see paths)
+
+2020-06-02 15:56:36,435 p=4521 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "could not locate file in lookup: /tmp/aaa"}
+2020-06-02 15:56:36,436 p=4521 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:56:36,436 p=4521 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:56:36,436 p=4521 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:57:14,492 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:57:14,498 p=4835 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:57:14,524 p=4835 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:57:14,537 p=4835 u=FLS |   [WARNING]: Unable to find '/root/aaa' in expected paths (use -vvvvv to see paths)
+
+2020-06-02 15:57:14,542 p=4835 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "could not locate file in lookup: /root/aaa"}
+2020-06-02 15:57:14,545 p=4835 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:57:14,545 p=4835 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:57:14,545 p=4835 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:57:47,950 p=5153 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 15:57:47,950 p=5153 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 15:57:47,966 p=5153 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 15:57:47,966 p=5153 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 15:57:47,967 p=5153 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 15:57:47,972 p=5153 u=FLS |  Parsed /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini inventory source with ini plugin
+2020-06-02 15:57:48,489 p=5153 u=FLS |  PLAYBOOK: handler.yaml **********************************************************************
+2020-06-02 15:57:48,489 p=5153 u=FLS |  1 plays in handler.yaml
+2020-06-02 15:57:48,536 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:57:48,543 p=5153 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:57:48,549 p=5153 u=FLS |  META: ran handlers
+2020-06-02 15:57:48,549 p=5153 u=FLS |  META: ran handlers
+2020-06-02 15:57:48,576 p=5153 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:57:48,576 p=5153 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 15:57:48,591 p=5153 u=FLS |   [WARNING]: Unable to find '/root/aaa' in expected paths (use -vvvvv to see paths)
+
+2020-06-02 15:57:48,596 p=5153 u=FLS |  fatal: [ds3]: FAILED! => {
+    "msg": "could not locate file in lookup: /root/aaa"
+}
+2020-06-02 15:57:48,598 p=5153 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-02 15:57:48,599 p=5153 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:57:48,599 p=5153 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 15:58:38,520 p=5665 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 15:58:38,521 p=5665 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 15:58:38,535 p=5665 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 15:58:38,536 p=5665 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 15:58:38,536 p=5665 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 15:58:39,050 p=5665 u=FLS |  PLAYBOOK: handler.yaml **********************************************************************
+2020-06-02 15:58:39,050 p=5665 u=FLS |  1 plays in handler.yaml
+2020-06-02 15:58:39,091 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 15:58:39,099 p=5665 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 15:58:39,116 p=5665 u=FLS |  META: ran handlers
+2020-06-02 15:58:39,117 p=5665 u=FLS |  META: ran handlers
+2020-06-02 15:58:39,167 p=5665 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 15:58:39,168 p=5665 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 15:58:39,218 p=5665 u=FLS |  ok: [ds3] => (item=ffsdf) => {
+    "msg": "ffsdf"
+}
+2020-06-02 15:58:39,219 p=5665 u=FLS |  META: ran handlers
+2020-06-02 15:58:39,220 p=5665 u=FLS |  META: ran handlers
+2020-06-02 15:58:39,221 p=5665 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 15:58:39,221 p=5665 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 16:44:42,816 p=32290 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 16:44:42,816 p=32290 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 16:44:42,834 p=32290 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 16:44:42,835 p=32290 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 16:44:42,836 p=32290 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 16:44:43,454 p=32290 u=FLS |  PLAYBOOK: handler.yaml **********************************************************************
+2020-06-02 16:44:43,454 p=32290 u=FLS |  1 plays in handler.yaml
+2020-06-02 16:44:43,502 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:44:43,508 p=32290 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 16:44:43,512 p=32290 u=FLS |  META: ran handlers
+2020-06-02 16:44:43,512 p=32290 u=FLS |  META: ran handlers
+2020-06-02 16:44:43,536 p=32290 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 16:44:43,536 p=32290 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 16:44:43,554 p=32290 u=FLS |  META: ran handlers
+2020-06-02 16:44:43,555 p=32290 u=FLS |  META: ran handlers
+2020-06-02 16:44:43,556 p=32290 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 16:44:43,556 p=32290 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=0   
+2020-06-02 16:44:49,957 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:44:49,962 p=32397 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 16:44:49,989 p=32397 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 16:44:50,004 p=32397 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 16:44:50,004 p=32397 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=0   
+2020-06-02 16:45:00,730 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:45:00,736 p=32507 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 16:45:00,763 p=32507 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 16:45:00,778 p=32507 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 16:45:00,779 p=32507 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=0   
+2020-06-02 16:45:27,021 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:45:27,027 p=32716 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 16:45:27,055 p=32716 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 16:45:27,081 p=32716 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 16:45:27,082 p=32716 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=0   
+2020-06-02 16:46:23,246 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:46:23,252 p=33332 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 16:46:23,279 p=33332 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 16:46:23,296 p=33332 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 16:46:23,296 p=33332 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=0   
+2020-06-02 16:47:13,177 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:47:13,182 p=33846 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 16:47:13,206 p=33846 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 16:47:13,229 p=33846 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 16:47:13,230 p=33846 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=0   
+2020-06-02 16:47:18,349 p=33853 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 16:47:18,349 p=33853 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 16:47:18,363 p=33853 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 16:47:18,363 p=33853 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 16:47:18,364 p=33853 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 16:47:18,370 p=33853 u=FLS |  Parsed /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini inventory source with ini plugin
+2020-06-02 16:47:18,722 p=33853 u=FLS |  PLAYBOOK: handler.yaml **********************************************************************
+2020-06-02 16:47:18,723 p=33853 u=FLS |  1 plays in handler.yaml
+2020-06-02 16:47:18,745 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:47:18,750 p=33853 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 16:47:18,754 p=33853 u=FLS |  META: ran handlers
+2020-06-02 16:47:18,755 p=33853 u=FLS |  META: ran handlers
+2020-06-02 16:47:18,777 p=33853 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 16:47:18,777 p=33853 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 16:47:18,791 p=33853 u=FLS |  META: ran handlers
+2020-06-02 16:47:18,791 p=33853 u=FLS |  META: ran handlers
+2020-06-02 16:47:18,792 p=33853 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 16:47:18,792 p=33853 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=0   
+2020-06-02 16:47:49,047 p=34164 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 16:47:49,047 p=34164 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 16:47:49,060 p=34164 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 16:47:49,061 p=34164 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 16:47:49,061 p=34164 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 16:47:49,069 p=34164 u=FLS |  Parsed /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini inventory source with ini plugin
+2020-06-02 16:47:49,448 p=34164 u=FLS |  PLAYBOOK: handler.yaml **********************************************************************
+2020-06-02 16:47:49,448 p=34164 u=FLS |  1 plays in handler.yaml
+2020-06-02 16:47:49,471 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:47:49,475 p=34164 u=FLS |  PLAY [ds3] **********************************************************************************
+2020-06-02 16:47:49,478 p=34164 u=FLS |  META: ran handlers
+2020-06-02 16:47:49,478 p=34164 u=FLS |  META: ran handlers
+2020-06-02 16:47:49,499 p=34164 u=FLS |  TASK [with_items5] **************************************************************************
+2020-06-02 16:47:49,499 p=34164 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 16:47:49,516 p=34164 u=FLS |  META: ran handlers
+2020-06-02 16:47:49,517 p=34164 u=FLS |  META: ran handlers
+2020-06-02 16:47:49,518 p=34164 u=FLS |  PLAY RECAP **********************************************************************************
+2020-06-02 16:47:49,518 p=34164 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=0   
+2020-06-02 16:48:25,308 p=34573 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 16:48:25,309 p=34573 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 16:48:25,326 p=34573 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 16:48:25,327 p=34573 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 16:48:25,327 p=34573 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 16:48:25,333 p=34573 u=FLS |  Parsed /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini inventory source with ini plugin
+2020-06-02 16:48:25,846 p=34573 u=FLS |  PLAYBOOK: handler.yaml ********************************************************************************
+2020-06-02 16:48:25,846 p=34573 u=FLS |  1 plays in handler.yaml
+2020-06-02 16:48:25,889 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:48:25,895 p=34573 u=FLS |  PLAY [ds3] ********************************************************************************************
+2020-06-02 16:48:25,898 p=34573 u=FLS |  META: ran handlers
+2020-06-02 16:48:25,922 p=34573 u=FLS |  TASK [with_items5] ************************************************************************************
+2020-06-02 16:48:25,922 p=34573 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 16:48:25,939 p=34573 u=FLS |  META: ran handlers
+2020-06-02 16:48:25,939 p=34573 u=FLS |  META: ran handlers
+2020-06-02 16:48:25,940 p=34573 u=FLS |  PLAY RECAP ********************************************************************************************
+2020-06-02 16:48:25,941 p=34573 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=0   
+2020-06-02 16:48:36,454 p=34680 u=FLS |  ansible-playbook 2.7.11
+  config file = /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg
+  configured module search path = ['/Users/FLS/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.3 (default, Jun 19 2019, 07:40:15) [Clang 10.0.0 (clang-1000.11.45.5)]
+2020-06-02 16:48:36,454 p=34680 u=FLS |  Using /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/ansible.cfg as config file
+2020-06-02 16:48:36,471 p=34680 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet host_list requirements, check plugin documentation if this is unexpected
+2020-06-02 16:48:36,471 p=34680 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet script requirements, check plugin documentation if this is unexpected
+2020-06-02 16:48:36,472 p=34680 u=FLS |  /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini did not meet yaml requirements, check plugin documentation if this is unexpected
+2020-06-02 16:48:36,478 p=34680 u=FLS |  Parsed /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/hostlists.ini inventory source with ini plugin
+2020-06-02 16:48:37,024 p=34680 u=FLS |  PLAYBOOK: handler.yaml ********************************************************************************
+2020-06-02 16:48:37,024 p=34680 u=FLS |  1 plays in handler.yaml
+2020-06-02 16:48:37,070 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:48:37,077 p=34680 u=FLS |  PLAY [ds3] ********************************************************************************************
+2020-06-02 16:48:37,080 p=34680 u=FLS |  META: ran handlers
+2020-06-02 16:48:37,103 p=34680 u=FLS |  TASK [with_items5] ************************************************************************************
+2020-06-02 16:48:37,104 p=34680 u=FLS |  task path: /Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml:129
+2020-06-02 16:48:37,120 p=34680 u=FLS |  META: ran handlers
+2020-06-02 16:48:37,120 p=34680 u=FLS |  META: ran handlers
+2020-06-02 16:48:37,121 p=34680 u=FLS |  PLAY RECAP ********************************************************************************************
+2020-06-02 16:48:37,121 p=34680 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=0   
+2020-06-02 16:53:16,808 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:53:16,814 p=37352 u=FLS |  PLAY [ds3] ************************************************************************
+2020-06-02 16:53:16,850 p=37352 u=FLS |  TASK [if] *************************************************************************
+2020-06-02 16:53:18,191 p=37352 u=FLS |  changed: [ds3]
+2020-06-02 16:53:18,210 p=37352 u=FLS |  TASK [if2] ************************************************************************
+2020-06-02 16:53:18,266 p=37352 u=FLS |  ok: [ds3] => {
+    "msg": "command execution successful"
+}
+2020-06-02 16:53:18,288 p=37352 u=FLS |  TASK [if3] ************************************************************************
+2020-06-02 16:53:18,327 p=37352 u=FLS |  PLAY RECAP ************************************************************************
+2020-06-02 16:53:18,328 p=37352 u=FLS |  ds3                        : ok=2    changed=1    unreachable=0    failed=0   
+2020-06-02 16:56:55,047 p=39516 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 18, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+   testpath: /testdir1
+   ^ here
+
+2020-06-02 16:57:10,726 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 16:57:10,731 p=39721 u=FLS |  PLAY [ds3] ************************************************************************
+2020-06-02 16:57:10,763 p=39721 u=FLS |  TASK [debug] **********************************************************************
+2020-06-02 16:57:10,806 p=39721 u=FLS |  ok: [ds3] => {
+    "msg": "file not exists"
+}
+2020-06-02 16:57:10,807 p=39721 u=FLS |  PLAY RECAP ************************************************************************
+2020-06-02 16:57:10,808 p=39721 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 17:41:03,792 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 17:41:04,997 p=65184 u=FLS |  ds3 | FAILED! => {
+    "changed": false,
+    "msg": "Unsupported parameters for (setup) module: msg Supported parameters include: fact_path, filter, gather_subset, gather_timeout"
+}
+2020-06-02 17:41:16,614 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 17:41:16,679 p=65309 u=FLS |  crawl1 | SUCCESS => {
+    "msg": "2.7.11"
+}
+2020-06-02 17:41:16,700 p=65309 u=FLS |  crawl2 | SUCCESS => {
+    "msg": "2.7.11"
+}
+2020-06-02 17:41:16,718 p=65309 u=FLS |  crawl3 | SUCCESS => {
+    "msg": "2.7.11"
+}
+2020-06-02 17:41:16,737 p=65309 u=FLS |  crawl4 | SUCCESS => {
+    "msg": "2.7.11"
+}
+2020-06-02 17:41:16,771 p=65309 u=FLS |  crawl5 | SUCCESS => {
+    "msg": "2.7.11"
+}
+2020-06-02 17:41:16,772 p=65309 u=FLS |  ds1 | SUCCESS => {
+    "msg": "2.7.11"
+}
+2020-06-02 17:41:16,776 p=65309 u=FLS |  ds2 | SUCCESS => {
+    "msg": "2.7.11"
+}
+2020-06-02 17:41:16,808 p=65309 u=FLS |  ds3 | SUCCESS => {
+    "msg": "2.7.11"
+}
+2020-06-02 17:42:24,815 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 17:42:24,887 p=65929 u=FLS |  ds3 | SUCCESS => {
+    "msg": "2.7.11"
+}
+2020-06-02 17:42:29,435 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 17:42:29,495 p=66034 u=FLS |  ds3 | SUCCESS => {
+    "msg": {
+        "full": "2.7.11",
+        "major": 2,
+        "minor": 7,
+        "revision": 11,
+        "string": "2.7.11"
+    }
+}
+2020-06-02 17:44:47,983 p=67357 u=FLS |   [WARNING]: Could not match supplied host pattern, ignoring: tags=role1
+
+2020-06-02 17:44:47,984 p=67357 u=FLS |  ERROR! Specified hosts and/or --limit does not match any hosts
+2020-06-02 17:45:09,639 p=67566 u=FLS |  ERROR! the playbook: tags=role1 could not be found
+2020-06-02 17:45:29,490 p=67772 u=FLS |  ERROR! the playbook: tags=role1 could not be found
+2020-06-02 17:45:39,569 p=67876 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 186, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      - debug:
+          msg: 'I caught an error'
+^ here
+
+2020-06-02 17:46:06,605 p=68085 u=FLS |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 197, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: roletest
+    ^ here
+
+2020-06-02 17:46:25,044 p=68293 u=FLS |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 196, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+# role 角色：
+  - name: roletest
+    ^ here
+
+2020-06-02 17:48:28,810 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 17:48:28,816 p=69521 u=FLS |  PLAY [ds3] ************************************************************************************
+2020-06-02 17:48:28,844 p=69521 u=FLS |  TASK [local : Stop if ansible version is too low, make sure that the Ansible version is Ansible 2.4.2 or later, otherwise a compatibility issue occurs.] ***
+2020-06-02 17:48:28,889 p=69521 u=FLS |  ok: [ds3] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+2020-06-02 17:48:28,890 p=69521 u=FLS |  PLAY RECAP ************************************************************************************
+2020-06-02 17:48:28,890 p=69521 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-02 17:48:47,805 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 17:48:47,812 p=69731 u=FLS |  PLAY [ds3] ************************************************************************************
+2020-06-02 17:48:47,838 p=69731 u=FLS |  TASK [local : Stop if ansible version is too low, make sure that the Ansible version is Ansible 2.4.2 or later, otherwise a compatibility issue occurs.] ***
+2020-06-02 17:48:47,884 p=69731 u=FLS |  fatal: [ds3]: FAILED! => {
+    "assertion": "ansible_version.full is version('2.9.2','>=')",
+    "changed": false,
+    "evaluated_to": false,
+    "msg": "Assertion failed"
+}
+2020-06-02 17:48:47,885 p=69731 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/local.retry
+
+2020-06-02 17:48:47,885 p=69731 u=FLS |  PLAY RECAP ************************************************************************************
+2020-06-02 17:48:47,886 p=69731 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 17:49:31,919 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 17:49:31,926 p=70146 u=FLS |  PLAY [ds3] ************************************************************************************
+2020-06-02 17:49:31,948 p=70146 u=FLS |  TASK [local : Stop if ansible version is too low, make sure that the Ansible version is Ansible 2.4.2 or later, otherwise a compatibility issue occurs.] ***
+2020-06-02 17:49:31,990 p=70146 u=FLS |  fatal: [ds3]: FAILED! => {
+    "assertion": "ansible_version.full is version('2.9.2','>=')",
+    "changed": false,
+    "evaluated_to": false,
+    "msg": "please make sure ansible versjion >= 2.4.2"
+}
+2020-06-02 17:49:31,991 p=70146 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/local.retry
+
+2020-06-02 17:49:31,991 p=70146 u=FLS |  PLAY RECAP ************************************************************************************
+2020-06-02 17:49:31,992 p=70146 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-02 17:49:55,502 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-02 17:49:55,508 p=70355 u=FLS |  PLAY [ds3] ************************************************************************************
+2020-06-02 17:49:55,531 p=70355 u=FLS |  TASK [local : Stop if ansible version is too low, make sure that the Ansible version is Ansible 2.4.2 or later, otherwise a compatibility issue occurs.] ***
+2020-06-02 17:49:55,574 p=70355 u=FLS |  ok: [ds3] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+2020-06-02 17:49:55,575 p=70355 u=FLS |  PLAY RECAP ************************************************************************************
+2020-06-02 17:49:55,575 p=70355 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-03 15:12:36,486 p=96817 u=FLS |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 196, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+# role 角色：
+  - name: roletest
+    ^ here
+
+2020-06-03 15:12:47,312 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-03 15:12:47,322 p=96833 u=FLS |  PLAY [ds3] *****************************************************************************
+2020-06-03 15:12:47,334 p=96833 u=FLS |  PLAY RECAP *****************************************************************************
+2020-06-03 15:12:57,006 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-03 15:12:57,015 p=96941 u=FLS |  PLAY [ds3] *****************************************************************************
+2020-06-03 15:12:57,035 p=96941 u=FLS |  TASK [show] ****************************************************************************
+2020-06-03 15:12:57,097 p=96941 u=FLS |  ok: [ds3] => {
+    "msg": "/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example"
+}
+2020-06-03 15:12:57,099 p=96941 u=FLS |  PLAY RECAP *****************************************************************************
+2020-06-03 15:12:57,099 p=96941 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-03 15:13:19,750 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-03 15:13:19,758 p=97250 u=FLS |  PLAY [ds3] *****************************************************************************
+2020-06-03 15:13:19,783 p=97250 u=FLS |  TASK [show] ****************************************************************************
+2020-06-03 15:13:19,808 p=97250 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'env' is undefined\n\nThe error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 202, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n  - name: show\n    ^ here\n"}
+2020-06-03 15:13:19,811 p=97250 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-03 15:13:19,811 p=97250 u=FLS |  PLAY RECAP *****************************************************************************
+2020-06-03 15:13:19,811 p=97250 u=FLS |  ds3                        : ok=0    changed=0    unreachable=0    failed=1   
+2020-06-03 15:13:28,272 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-03 15:13:28,280 p=97261 u=FLS |  PLAY [ds3] *****************************************************************************
+2020-06-03 15:13:28,307 p=97261 u=FLS |  TASK [show] ****************************************************************************
+2020-06-03 15:13:28,381 p=97261 u=FLS |  ok: [ds3] => {
+    "msg": "/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example"
+}
+2020-06-03 15:13:28,384 p=97261 u=FLS |  PLAY RECAP *****************************************************************************
+2020-06-03 15:13:28,384 p=97261 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
