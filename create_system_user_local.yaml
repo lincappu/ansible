@@ -1,7 +1,8 @@
 ---
 - name: creat user
   hosts: xen
-  gather_fa: False
+  gather_facts: False
+  remote_user: root
   vars_prompt:
     - name: "user_name"
       prompt: "Enter user name"
@@ -27,13 +28,14 @@
         path: /etc/sudoers
         line: '{{ user_name }} ALL=(ALL) NOPASSWD: ALL'
         insertafter: EOF
-        regexp: '^{{ username }} .*'
+        regexp: '^{{ user_name }} .*'
         state: present
         backrefs: yes
       tags: [create_system_user,update_sudoers]
 
-    - name: set authorized key
+    - name: set authorized keys
       authorized_key:
         user: "{{user_name}}"
-        key: "{{loop('file','/home/{{ username }}/.ssh/id_rsa.pub')}}"
+        key: "{{lookup('file','/home/{{ user_name }}/.ssh/id_rsa.pub')}}"
         state: present
+      tags: [create_system_user,update_sudoers,set_authorized_key]
