@@ -1,0 +1,146 @@
+---
+
+- name: download other binary
+  get_url:
+    url: "{{ item.url }}"
+    dest: "{{ downloads_dir }}/{{ item.name }}-{{ item.version }}.tar.gz"
+    checksum: "{{ item.checksum | default(omit) }}"
+    force: yes
+    validate_certs: no
+  register: get_url_result
+  until: "'OK' in get_url_result.msg or 'file already exists' in get_url_result.msg"
+  retries: 4
+  delay: "{{ retry_stagger | random + 3 }}"
+  with_items: "{{ third_party_packages }}"
+  when:
+    - has_outbound_network
+    - not under_gfw
+
+- name: download other binary under gfw
+  get_url:
+    url: "{{ item.url }}"
+    dest: "{{ downloads_dir }}/{{ item.name }}-{{ item.version }}.tar.gz"
+    checksum: "{{ item.checksum | default(omit) }}"
+    force: yes
+    validate_certs: no
+  register: get_url_result
+  until: "'OK' in get_url_result.msg or 'file already exists' in get_url_result.msg"
+  retries: 4
+  delay: "{{ retry_stagger | random + 3 }}"
+  with_items: "{{ third_party_packages_under_gfw }}"
+  when:
+    - has_outbound_network
+    - under_gfw
+
+- name: download TiSpark packages
+  get_url:
+    url: "{{ item.url }}"
+    dest: "{{ downloads_dir }}/{{ item.name }}"
+    checksum: "{{ item.checksum | default(omit) }}"
+    force: yes
+    validate_certs: no
+  register: get_url_result
+  until: "'OK' in get_url_result.msg or 'file already exists' in get_url_result.msg"
+  retries: 4
+  delay: "{{ retry_stagger | random + 3 }}"
+  with_items: "{{ tispark_packages }}"
+  when:
+    - has_outbound_network
+    - not deploy_without_tidb|default(false)
+
+- name: unarchive third party binary
+  shell: ls -1 {{ item.name }}-{{ item.version }}.tar.gz | xargs -n1 tar xzf
+  args:
+    chdir: "{{ downloads_dir }}"
+    warn: no
+  with_items: "{{ third_party_packages }}"
+
+- name: unarchive tispark-sample-data
+  shell: ls -1 tispark-sample-data.tar.gz | xargs -n1 tar xzf
+  args:
+    chdir: "{{ downloads_dir }}"
+    warn: no
+  when: not deploy_without_tidb|default(false)
+
+- name: cp monitoring binary
+  shell: >
+    cp -v {{ downloads_dir }}/{{ item }}-*/{{ item }} "{{ resources_dir }}/bin/{{ item }}"
+  with_items:
+    - alertmanager
+    - prometheus
+    - node_exporter
+    - pushgateway
+    - blackbox_exporter
+
+- name: cp tispark
+  shell: >
+    cp -v {{ downloads_dir }}/tispark-core-2.1.2-spark_2.3-jar-with-dependencies.jar "{{ resources_dir }}/bin/tispark-core-2.1.2-spark_2.3-jar-with-dependencies.jar"
+  when: not deploy_without_tidb|default(false)
+
+- name: cp tispark-sample-data
+  shell: >
+    cp -rfv {{ downloads_dir }}/tispark-sample-data "{{ resources_dir }}/bin/"
+  when: not deploy_without_tidb|default(false)
+
+- name: unarchive tidb binary
+  shell: ls -1 {{ item.name }}-{{ item.version }}.tar.gz | xargs -n1 tar xzf
+  args:
+    chdir: "{{ downloads_dir }}"
+    warn: no
+  with_items: "{{ tidb_packages }}"
+
+- name: unarchive tidb toolkit binary
+  shell: ls -1 {{ item.name }}-{{ item.version }}.tar.gz | xargs -n1 tar xzf
+  args:
+    chdir: "{{ downloads_dir }}"
+    warn: no
+  with_items: "{{ tidb_toolkit_packages }}"
+
+- name: unarchive common binary
+  shell: ls -1 {{ item.name }}-{{ item.version }}.tar.gz | xargs -n1 tar xzf
+  args:
+    chdir: "{{ downloads_dir }}"
+    warn: no
+  with_items: "{{ common_packages }}"
+
+- name: cp tidb binary
+  shell: >
+    cp -v {{ downloads_dir }}/{{ item.name }}-{{ item.version}}*/bin/* "{{ resources_dir }}/bin/"
+  with_items: "{{ tidb_packages }}"
+
+- name: cp tidb toolkit binary
+  shell: >
+    cp -v {{ downloads_dir }}/{{ item.name }}-{{ item.version}}*/bin/* "{{ resources_dir }}/bin/"
+  with_items: "{{ tidb_toolkit_packages }}"
+
+- name: cp fio binary
+  shell: >
+    cp -v {{ downloads_dir }}/fio-*/{{ item }} "{{ resources_dir }}/bin/"
+  with_items:
+    - fio
+
+- name: cp grafana_collector binary and fonts
+  shell: >
+    cp -rv {{ downloads_dir }}/grafana_collector-latest-linux-amd64/* "{{ resources_dir }}/bin/"
+
+- name: cp kafka_exporter binary
+  shell: >
+    cp -v {{ downloads_dir }}/kafka_exporter-*/{{ item }} "{{ resources_dir }}/bin/"
+  with_items:
+    - kafka_exporter
+
+- name: cp daemontools binary
+  shell: >
+    cp -v {{ downloads_dir }}/daemontools-*/bin/{{ item }} "{{ resources_dir }}/bin/"
+  with_items:
+    - supervise
+    - svstat
+    - svc
+  when: process_supervision == 'supervise'
+
+- name: cp tidb-insight tarball
+  shell: mv {{ downloads_dir }}/tidb-insight-v*.tar.gz {{ downloads_dir }}/tidb-insight.tar.gz
+
+- name: clean up download dir
+  shell: >
+    cd "{{ downloads_dir }}" && find . -mindepth 1 -maxdepth 1 -type d -exec rm -rf {} \;

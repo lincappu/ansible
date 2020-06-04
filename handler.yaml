@@ -199,10 +199,46 @@
 #    tags: role1
 
 
+
+  - name: disk space check - fail when disk is full
+    raw: df -h . | tail -n1
+    register: disk_space_st
+    failed_when: " '100%' in disk_space_st.stdout "
+    changed_when: false
+    tags: test4
+
+
+
+  - name: get facts
+    setup:
+      gather_subset: hardware
+      gather_timeout: 30
+    register: hardware_st
+    tags: test5
+
+
+
+
+
+  - name: Preflight check - Get umask
+    shell: umask
+    register: umask
+    changed_when: False
+    tags: test6
+
   - name: show
     debug:
-      msg: "{{playbook_dir}}"
-    tags: test3
+      msg: "{{umask}}"
+    tags: test6
+
+
+  - name: Preflight check - Does the system have a standard umask
+    fail:
+      msg: 'The umask of the system ({{ umask.stdout.strip() }}) prevents successful installation. We suggest a standard umask such as 0022.'
+    when: umask.stdout.strip()[-2:] not in ('00', '02', '20', '22')
+    tags: test6
+
+
 
 
 
@@ -218,4 +254,5 @@
     file:
       path: /tmp/handlers_ok
       state: touch
+
 

@@ -3157,3 +3157,905 @@ The offending line appears to be:
 }
 2020-06-03 15:13:28,384 p=97261 u=FLS |  PLAY RECAP *****************************************************************************
 2020-06-03 15:13:28,384 p=97261 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-04 11:12:31,831 p=84652 u=FLS |  ERROR! You must specify a playbook file to run
+2020-06-04 11:12:38,295 p=84659 u=FLS |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 214, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: show
+  ^ here
+
+2020-06-04 11:12:47,376 p=84768 u=FLS |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 215, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- name: show
+    debug:
+         ^ here
+
+2020-06-04 11:13:02,012 p=84878 u=FLS |  ERROR! 'raw' is not a valid attribute for a Play
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 207, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: disk space check - fail when disk is full
+  ^ here
+
+2020-06-04 11:13:15,863 p=85091 u=FLS |  ERROR! 'debug' is not a valid attribute for a Play
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 202, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: show
+  ^ here
+
+2020-06-04 11:13:28,267 p=85199 u=FLS |  ERROR! 'raw' is not a valid attribute for a Play
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 203, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: disk space check - fail when disk is full
+  ^ here
+
+2020-06-04 11:14:16,590 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-04 11:14:16,597 p=85659 u=FLS |  PLAY [ds3] **********************************************************************************************************************
+2020-06-04 11:14:16,625 p=85659 u=FLS |  TASK [disk space check - fail when disk is full] ********************************************************************************
+2020-06-04 11:14:17,478 p=85659 u=FLS |  ok: [ds3]
+2020-06-04 11:14:17,489 p=85659 u=FLS |  TASK [show] *********************************************************************************************************************
+2020-06-04 11:14:17,552 p=85659 u=FLS |  ok: [ds3] => {
+    "msg": {
+        "changed": false,
+        "failed": false,
+        "failed_when_result": false,
+        "rc": 0,
+        "stderr": "Shared connection to 172.16.71.3 closed.\r\n",
+        "stderr_lines": [
+            "Shared connection to 172.16.71.3 closed."
+        ],
+        "stdout": "/dev/vda1        40G   31G  7.2G  81% /\r\n",
+        "stdout_lines": [
+            "/dev/vda1        40G   31G  7.2G  81% /"
+        ]
+    }
+}
+2020-06-04 11:14:17,555 p=85659 u=FLS |  PLAY RECAP **********************************************************************************************************************
+2020-06-04 11:14:17,555 p=85659 u=FLS |  ds3                        : ok=2    changed=0    unreachable=0    failed=0   
+2020-06-04 11:23:43,695 p=91112 u=FLS |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 212, column 20, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: get facts:
+                   ^ here
+
+2020-06-04 11:23:50,248 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-04 11:23:50,253 p=91217 u=FLS |  PLAY [ds3] **********************************************************************************************************************
+2020-06-04 11:23:50,310 p=91217 u=FLS |  TASK [get facts] ****************************************************************************************************************
+2020-06-04 11:23:50,735 p=91217 u=FLS |  fatal: [ds3]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh_askpass: exec(/usr/X11R6/bin/ssh-askpass): No such file or directory\r\nPermission denied, please try again.\r\nssh_askpass: exec(/usr/X11R6/bin/ssh-askpass): No such file or directory\r\nPermission denied, please try again.\r\nssh_askpass: exec(/usr/X11R6/bin/ssh-askpass): No such file or directory\r\nfanliusong@172.16.71.3: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2020-06-04 11:23:50,738 p=91217 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-04 11:23:50,739 p=91217 u=FLS |  PLAY RECAP **********************************************************************************************************************
+2020-06-04 11:23:50,739 p=91217 u=FLS |  ds3                        : ok=0    changed=0    unreachable=1    failed=0   
+2020-06-04 11:25:01,404 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-04 11:25:01,413 p=91842 u=FLS |  PLAY [ds3] **********************************************************************************************************************
+2020-06-04 11:25:01,439 p=91842 u=FLS |  TASK [get facts] ****************************************************************************************************************
+2020-06-04 11:25:04,758 p=91842 u=FLS |  ok: [ds3]
+2020-06-04 11:25:04,772 p=91842 u=FLS |  TASK [show] *********************************************************************************************************************
+2020-06-04 11:25:04,860 p=91842 u=FLS |  ok: [ds3] => {
+    "msg": {
+        "ansible_facts": {
+            "ansible_apparmor": {
+                "status": "disabled"
+            },
+            "ansible_architecture": "x86_64",
+            "ansible_bios_date": "04/01/2014",
+            "ansible_bios_version": "8a46cfe",
+            "ansible_cmdline": {
+                "BOOT_IMAGE": "/boot/vmlinuz-3.10.0-693.21.1.el7.x86_64",
+                "LANG": "en_US.UTF-8",
+                "console": "ttyS0,115200n8",
+                "crashkernel": "auto",
+                "idle": "halt",
+                "net.ifnames": "0",
+                "ro": true,
+                "root": "UUID=eb448abb-3012-4d8d-bcde-94434d586a31"
+            },
+            "ansible_date_time": {
+                "date": "2020-06-04",
+                "day": "04",
+                "epoch": "1591241103",
+                "hour": "11",
+                "iso8601": "2020-06-04T03:25:03Z",
+                "iso8601_basic": "20200604T112503139099",
+                "iso8601_basic_short": "20200604T112503",
+                "iso8601_micro": "2020-06-04T03:25:03.139189Z",
+                "minute": "25",
+                "month": "06",
+                "second": "03",
+                "time": "11:25:03",
+                "tz": "CST",
+                "tz_offset": "+0800",
+                "weekday": "Thursday",
+                "weekday_number": "4",
+                "weeknumber": "22",
+                "year": "2020"
+            },
+            "ansible_device_links": {
+                "ids": {},
+                "labels": {},
+                "masters": {},
+                "uuids": {
+                    "vda1": [
+                        "eb448abb-3012-4d8d-bcde-94434d586a31"
+                    ],
+                    "vdb1": [
+                        "038e9ae1-fc66-4896-aafd-6bb0b7f10cc2"
+                    ],
+                    "vdc": [
+                        "bf365fdc-2753-4f15-b29c-889a700f4647"
+                    ],
+                    "vdd": [
+                        "12084a06-cf49-44cc-8383-7c17eca3a878"
+                    ]
+                }
+            },
+            "ansible_devices": {
+                "vda": {
+                    "holders": [],
+                    "host": "SCSI storage controller: Red Hat, Inc Virtio block device",
+                    "links": {
+                        "ids": [],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": []
+                    },
+                    "model": null,
+                    "partitions": {
+                        "vda1": {
+                            "holders": [],
+                            "links": {
+                                "ids": [],
+                                "labels": [],
+                                "masters": [],
+                                "uuids": [
+                                    "eb448abb-3012-4d8d-bcde-94434d586a31"
+                                ]
+                            },
+                            "sectors": "83881984",
+                            "sectorsize": 512,
+                            "size": "40.00 GB",
+                            "start": "2048",
+                            "uuid": "eb448abb-3012-4d8d-bcde-94434d586a31"
+                        }
+                    },
+                    "removable": "0",
+                    "rotational": "1",
+                    "sas_address": null,
+                    "sas_device_handle": null,
+                    "scheduler_mode": "",
+                    "sectors": "83886080",
+                    "sectorsize": "512",
+                    "size": "40.00 GB",
+                    "support_discard": "0",
+                    "vendor": "0x1af4",
+                    "virtual": 1
+                },
+                "vdb": {
+                    "holders": [],
+                    "host": "SCSI storage controller: Red Hat, Inc Virtio block device",
+                    "links": {
+                        "ids": [],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": []
+                    },
+                    "model": null,
+                    "partitions": {
+                        "vdb1": {
+                            "holders": [],
+                            "links": {
+                                "ids": [],
+                                "labels": [],
+                                "masters": [],
+                                "uuids": [
+                                    "038e9ae1-fc66-4896-aafd-6bb0b7f10cc2"
+                                ]
+                            },
+                            "sectors": "4294965310",
+                            "sectorsize": 512,
+                            "size": "2.00 TB",
+                            "start": "34",
+                            "uuid": "038e9ae1-fc66-4896-aafd-6bb0b7f10cc2"
+                        }
+                    },
+                    "removable": "0",
+                    "rotational": "1",
+                    "sas_address": null,
+                    "sas_device_handle": null,
+                    "scheduler_mode": "",
+                    "sectors": "4294967296",
+                    "sectorsize": "512",
+                    "size": "2.00 TB",
+                    "support_discard": "0",
+                    "vendor": "0x1af4",
+                    "virtual": 1
+                },
+                "vdc": {
+                    "holders": [],
+                    "host": "SCSI storage controller: Red Hat, Inc Virtio block device",
+                    "links": {
+                        "ids": [],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "bf365fdc-2753-4f15-b29c-889a700f4647"
+                        ]
+                    },
+                    "model": null,
+                    "partitions": {},
+                    "removable": "0",
+                    "rotational": "1",
+                    "sas_address": null,
+                    "sas_device_handle": null,
+                    "scheduler_mode": "",
+                    "sectors": "8388608000",
+                    "sectorsize": "512",
+                    "size": "3.91 TB",
+                    "support_discard": "0",
+                    "vendor": "0x1af4",
+                    "virtual": 1
+                },
+                "vdd": {
+                    "holders": [],
+                    "host": "SCSI storage controller: Red Hat, Inc Virtio block device",
+                    "links": {
+                        "ids": [],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "12084a06-cf49-44cc-8383-7c17eca3a878"
+                        ]
+                    },
+                    "model": null,
+                    "partitions": {},
+                    "removable": "0",
+                    "rotational": "1",
+                    "sas_address": null,
+                    "sas_device_handle": null,
+                    "scheduler_mode": "",
+                    "sectors": "2097152000",
+                    "sectorsize": "512",
+                    "size": "1000.00 GB",
+                    "support_discard": "0",
+                    "vendor": "0x1af4",
+                    "virtual": 1
+                }
+            },
+            "ansible_distribution": "CentOS",
+            "ansible_distribution_file_parsed": true,
+            "ansible_distribution_file_path": "/etc/redhat-release",
+            "ansible_distribution_file_variety": "RedHat",
+            "ansible_distribution_major_version": "7",
+            "ansible_distribution_release": "Core",
+            "ansible_distribution_version": "7.6.1810",
+            "ansible_dns": {
+                "nameservers": [
+                    "100.100.2.136",
+                    "100.100.2.138"
+                ],
+                "options": {
+                    "attempts": "3",
+                    "rotate": true,
+                    "single-request-reopen": true,
+                    "timeout": "2"
+                }
+            },
+            "ansible_domain": "",
+            "ansible_effective_group_id": 0,
+            "ansible_effective_user_id": 0,
+            "ansible_env": {
+                "HOME": "/root",
+                "LC_CTYPE": "zh_CN.UTF-8",
+                "LOGNAME": "root",
+                "MAIL": "/var/mail/fanliusong",
+                "PATH": "/sbin:/bin:/usr/sbin:/usr/bin",
+                "PWD": "/home/fanliusong",
+                "SHELL": "/bin/bash",
+                "SHLVL": "1",
+                "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-ozknhlpqqubvdzjnepnkzdmcygyxmclm; /usr/bin/python /home/fanliusong/.ansible/tmp/ansible-tmp-1591241101.4752169-96305727813072/AnsiballZ_setup.py",
+                "SUDO_GID": "1003",
+                "SUDO_UID": "1003",
+                "SUDO_USER": "fanliusong",
+                "TERM": "xterm-256color",
+                "USER": "root",
+                "USERNAME": "root",
+                "_": "/usr/bin/python"
+            },
+            "ansible_fips": false,
+            "ansible_form_factor": "Other",
+            "ansible_fqdn": "ds3",
+            "ansible_hostname": "ds3",
+            "ansible_kernel": "3.10.0-693.21.1.el7.x86_64",
+            "ansible_local": {
+                "testinfo": {
+                    "testmsg": {
+                        "msg1": "This is the first custom test message",
+                        "msg2": "This is the second custom test message"
+                    }
+                }
+            },
+            "ansible_lsb": {
+                "codename": "Core",
+                "description": "CentOS Linux release 7.6.1810 (Core)",
+                "id": "CentOS",
+                "major_release": "7",
+                "release": "7.6.1810"
+            },
+            "ansible_lvm": {
+                "lvs": {},
+                "pvs": {},
+                "vgs": {}
+            },
+            "ansible_machine": "x86_64",
+            "ansible_machine_id": "f0f31005fb5a436d88e3c6cbf54e25aa",
+            "ansible_memfree_mb": 34127,
+            "ansible_memory_mb": {
+                "nocache": {
+                    "free": 47843,
+                    "used": 209944
+                },
+                "real": {
+                    "free": 34127,
+                    "total": 257787,
+                    "used": 223660
+                },
+                "swap": {
+                    "cached": 0,
+                    "free": 0,
+                    "total": 0,
+                    "used": 0
+                }
+            },
+            "ansible_memtotal_mb": 257787,
+            "ansible_mounts": [
+                {
+                    "block_available": 1881468,
+                    "block_size": 4096,
+                    "block_total": 10287952,
+                    "block_used": 8406484,
+                    "device": "/dev/vda1",
+                    "fstype": "ext4",
+                    "inode_available": 2456877,
+                    "inode_total": 2621440,
+                    "inode_used": 164563,
+                    "mount": "/",
+                    "options": "rw,relatime,data=ordered",
+                    "size_available": 7706492928,
+                    "size_total": 42139451392,
+                    "uuid": "eb448abb-3012-4d8d-bcde-94434d586a31"
+                },
+                {
+                    "block_available": 396985105,
+                    "block_size": 4096,
+                    "block_total": 528411379,
+                    "block_used": 131426274,
+                    "device": "/dev/vdb1",
+                    "fstype": "ext4",
+                    "inode_available": 134150853,
+                    "inode_total": 134217728,
+                    "inode_used": 66875,
+                    "mount": "/tidb",
+                    "options": "rw,noatime,nodelalloc,data=ordered",
+                    "size_available": 1626050990080,
+                    "size_total": 2164373008384,
+                    "uuid": "038e9ae1-fc66-4896-aafd-6bb0b7f10cc2"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource",
+                    "options": "rw,relatime,attr2,inode64,noquota",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 111364329,
+                    "block_size": 4096,
+                    "block_total": 262016000,
+                    "block_used": 150651671,
+                    "device": "/dev/vdd",
+                    "fstype": "xfs",
+                    "inode_available": 524212551,
+                    "inode_total": 524288000,
+                    "inode_used": 75449,
+                    "mount": "/searchdata",
+                    "options": "rw,relatime,attr2,inode64,noquota",
+                    "size_available": 456148291584,
+                    "size_total": 1073217536000,
+                    "uuid": "12084a06-cf49-44cc-8383-7c17eca3a878"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/4d7a730e7719b35cc07dd253e188941e0d204f987b6aa40bc0fa35280facbfaf/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/9a94f39c87df541c25f34f5523b955060e3bcf1ec3edaf78f9e1809419da9afa/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 10736381283,
+                    "block_size": 1048576,
+                    "block_total": 10737418240,
+                    "block_used": 1036957,
+                    "device": "1d23f4b48f-goh76.cn-beijing.nas.aliyuncs.com:/",
+                    "fstype": "nfs4",
+                    "inode_available": 999988289,
+                    "inode_total": 1000000000,
+                    "inode_used": 11711,
+                    "mount": "/snapshot",
+                    "options": "rw,relatime,vers=4.0,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=6000,retrans=10,sec=sys,clientaddr=172.16.71.3,local_lock=none,addr=172.16.68.1",
+                    "size_available": 11257911740203008,
+                    "size_total": 11258999068426240,
+                    "uuid": "N/A"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/668aaab04a4fbf5b51d68fabbeb31621f43de643f346990399eb797e1c79d8cf/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/fb2eb0a09ac5590d7a97dfc5b20194dbe9134159c0815cec8394614427a05da8/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/ab45eb429bcdeaa7828b9eafe95553adc31700a69274551c5161811cb125d452/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/35e19dd2c46057cfa1c1211537396afac23155896ffabe18fd78b47b2a01d59a/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/d6e37c040f7682d1de50975a3ef63a3436e8ea8fc6f404620e02882f7a3119da/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/670f1a6007167a7661c05cc9f6ab4ed725a6ec4e8503a796e67e015f6f2d6519/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/cf904a5323ecb033f2c9859d6b06ca8e4d61f4991d1b21f3f817d97296004089/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/8998995f00646239890dd550d9738e85df0502e37da464f54f982fb75b326f23/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/ea380a4e8b2a2646c74731455fc01f035c132b28d81ce6c68a50d7ec0c2a7aa5/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                },
+                {
+                    "block_available": 566989085,
+                    "block_size": 4096,
+                    "block_total": 1048320000,
+                    "block_used": 481330915,
+                    "device": "/dev/vdc",
+                    "fstype": "xfs",
+                    "inode_available": 417107502,
+                    "inode_total": 419430400,
+                    "inode_used": 2322898,
+                    "mount": "/datasource/docker/containers/a1880a8619b11af84934a1bcf2c7775381c5db9066196a4796250a18b077631f/mounts",
+                    "options": "rw,relatime,attr2,inode64,noquota,bind",
+                    "size_available": 2322387292160,
+                    "size_total": 4293918720000,
+                    "uuid": "bf365fdc-2753-4f15-b29c-889a700f4647"
+                }
+            ],
+            "ansible_nodename": "ds3",
+            "ansible_os_family": "RedHat",
+            "ansible_pkg_mgr": "yum",
+            "ansible_processor": [
+                "0",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "1",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "2",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "3",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "4",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "5",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "6",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "7",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "8",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "9",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "10",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "11",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "12",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "13",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "14",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "15",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "16",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "17",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "18",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "19",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "20",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "21",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "22",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "23",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "24",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "25",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "26",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "27",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "28",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "29",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "30",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz",
+                "31",
+                "GenuineIntel",
+                "Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz"
+            ],
+            "ansible_processor_cores": 16,
+            "ansible_processor_count": 1,
+            "ansible_processor_threads_per_core": 2,
+            "ansible_processor_vcpus": 32,
+            "ansible_product_name": "Alibaba Cloud ECS",
+            "ansible_product_serial": "eaf2e3c0-98bf-4dd8-8d67-55b07be0f937",
+            "ansible_product_uuid": "EAF2E3C0-98BF-4DD8-8D67-55B07BE0F937",
+            "ansible_product_version": "pc-i440fx-2.1",
+            "ansible_python": {
+                "executable": "/usr/bin/python",
+                "has_sslcontext": true,
+                "type": "CPython",
+                "version": {
+                    "major": 2,
+                    "micro": 5,
+                    "minor": 7,
+                    "releaselevel": "final",
+                    "serial": 0
+                },
+                "version_info": [
+                    2,
+                    7,
+                    5,
+                    "final",
+                    0
+                ]
+            },
+            "ansible_python_version": "2.7.5",
+            "ansible_real_group_id": 0,
+            "ansible_real_user_id": 0,
+            "ansible_selinux": {
+                "status": "disabled"
+            },
+            "ansible_selinux_python_present": true,
+            "ansible_service_mgr": "systemd",
+            "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAI2FPDoPvqZjuGjjFc1XzFg+8ugzeDZRbM2wUDnuc/aP9FloHSBGmoGfTwodVoGngUYgqm0drpiCE1IR91IOPzRKq+VR0cqwi/Zb8Fs2Qhej99/WaeKLZhAJawaJqxcjDe3B7AlSJIOJV60WnmpG498MCTy8kzQbV6Bte7f6d8qPAAAAFQCAjvEWSVT+DfK1e1YrS3HqqJyUgwAAAIBFI4ZXMa9kplYEtxOCHhX0xVTeQyGRKMyPOL1RzkPEj57HZGiC+dK4JiFL4yjYARL940eXEX0mTrceT16newQWbnb0FJc6MaDnXFoPVDS6GEUIv9Ge32yi0Kw8WZZdeTHYlT3nB0uoS391hnEZjT36lHDb90ryFNngG1RdlPutZwAAAIAEpuctCdZxjEAVv9BNXLCOeXsI42ut1/KnIBcolVw5GMndnmm6A3kQ1H2AkdZMgMnN3LhmnUCg3V+2QsXEyqpTJNpqLHqqwX+TqzD/cy8+XwAvPhmwy0DTbyJs3DSSZbYyH8VssW+u1rsIAkHscirLjmYqTDSAl8WNnHiD2MIdhw==",
+            "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBO12eibt8pwcqzOfFQa8JCq3OyMeaxf0Cn3rURpYNXnyK1j6iEUV+Pyw9AP/kMWCNjdZsxZ3b4sv10RbgutlQHE=",
+            "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIK47r+7ZyhCqPRnSTRGcHyGram7AdUqSade1FcOM6zGu",
+            "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDRop4B3L/T13Oi5aYRx+4HAcbPpTwT+QyOmbUqP2gd9C6GZi8wgj/p6LCTfaS0IYenQMk0mB3si8rkjbLDTQ2GEoMQx/e6JvfEKbQD6T2wooiqhb9wIoeJK97SveFu7sJxcuPtYUbuXz8Ac9eTtv2bXUpkR2B1/0d+OdmPzU8rduQANZhz+KKI+XxIGAB+LodJG1uPdHUV74tZuGdOFr+erWdpshYu519YB1cxdZ5I9LpsX4csk15DFlXjxYk4PG8dJpQaz1j/XrjBkVkIZY8YaLPQvTsxx/YprQQLSpi/g6bkMqB//y67g0FXhdHjcn+vaUYfwWe9shtXCrKzra9R",
+            "ansible_swapfree_mb": 0,
+            "ansible_swaptotal_mb": 0,
+            "ansible_system": "Linux",
+            "ansible_system_capabilities": [
+                "cap_chown",
+                "cap_dac_override",
+                "cap_dac_read_search",
+                "cap_fowner",
+                "cap_fsetid",
+                "cap_kill",
+                "cap_setgid",
+                "cap_setuid",
+                "cap_setpcap",
+                "cap_linux_immutable",
+                "cap_net_bind_service",
+                "cap_net_broadcast",
+                "cap_net_admin",
+                "cap_net_raw",
+                "cap_ipc_lock",
+                "cap_ipc_owner",
+                "cap_sys_module",
+                "cap_sys_rawio",
+                "cap_sys_chroot",
+                "cap_sys_ptrace",
+                "cap_sys_pacct",
+                "cap_sys_admin",
+                "cap_sys_boot",
+                "cap_sys_nice",
+                "cap_sys_resource",
+                "cap_sys_time",
+                "cap_sys_tty_config",
+                "cap_mknod",
+                "cap_lease",
+                "cap_audit_write",
+                "cap_audit_control",
+                "cap_setfcap",
+                "cap_mac_override",
+                "cap_mac_admin",
+                "cap_syslog",
+                "35",
+                "36+ep"
+            ],
+            "ansible_system_capabilities_enforced": "True",
+            "ansible_system_vendor": "Alibaba Cloud",
+            "ansible_uptime_seconds": 3771017,
+            "ansible_user_dir": "/root",
+            "ansible_user_gecos": "root",
+            "ansible_user_gid": 0,
+            "ansible_user_id": "root",
+            "ansible_user_shell": "/bin/bash",
+            "ansible_user_uid": 0,
+            "ansible_userspace_architecture": "x86_64",
+            "ansible_userspace_bits": "64",
+            "gather_subset": [
+                "hardware"
+            ],
+            "module_setup": true
+        },
+        "changed": false,
+        "failed": false
+    }
+}
+2020-06-04 11:25:04,864 p=91842 u=FLS |  PLAY RECAP **********************************************************************************************************************
+2020-06-04 11:25:04,864 p=91842 u=FLS |  ds3                        : ok=2    changed=0    unreachable=0    failed=0   
+2020-06-04 14:59:34,760 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-04 14:59:34,766 p=15890 u=FLS |  PLAY [ds3] ********************************************************************************
+2020-06-04 14:59:34,799 p=15890 u=FLS |  TASK [Preflight check - Get umask] ********************************************************
+2020-06-04 14:59:36,500 p=15890 u=FLS |  ok: [ds3]
+2020-06-04 14:59:36,512 p=15890 u=FLS |  TASK [Preflight check - Does the system have a standard umask] ****************************
+2020-06-04 14:59:36,533 p=15890 u=FLS |  PLAY RECAP ********************************************************************************
+2020-06-04 14:59:36,533 p=15890 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=0   
+2020-06-04 15:00:14,361 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-04 15:00:14,367 p=16323 u=FLS |  PLAY [ds3] ********************************************************************************
+2020-06-04 15:00:14,393 p=16323 u=FLS |  TASK [Preflight check - Get umask] ********************************************************
+2020-06-04 15:00:15,247 p=16323 u=FLS |  ok: [ds3]
+2020-06-04 15:00:15,266 p=16323 u=FLS |  TASK [show] *******************************************************************************
+2020-06-04 15:00:15,285 p=16323 u=FLS |  fatal: [ds3]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'hardware_st' is undefined\n\nThe error appears to have been in '/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/handler.yaml': line 229, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n  - name: show\n    ^ here\n"}
+2020-06-04 15:00:15,290 p=16323 u=FLS |  	to retry, use: --limit @/Users/FLS/OneDrive - 北京新橙科技有限公司/onedrive/ansible-example/retry_files/handler.retry
+
+2020-06-04 15:00:15,290 p=16323 u=FLS |  PLAY RECAP ********************************************************************************
+2020-06-04 15:00:15,290 p=16323 u=FLS |  ds3                        : ok=1    changed=0    unreachable=0    failed=1   
+2020-06-04 15:00:29,520 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2020-06-04 15:00:29,525 p=16545 u=FLS |  PLAY [ds3] ********************************************************************************
+2020-06-04 15:00:29,549 p=16545 u=FLS |  TASK [Preflight check - Get umask] ********************************************************
+2020-06-04 15:00:30,436 p=16545 u=FLS |  ok: [ds3]
+2020-06-04 15:00:30,468 p=16545 u=FLS |  TASK [show] *******************************************************************************
+2020-06-04 15:00:30,528 p=16545 u=FLS |  ok: [ds3] => {
+    "msg": {
+        "changed": false,
+        "cmd": "umask",
+        "delta": "0:00:00.057264",
+        "end": "2020-06-04 15:00:30.356630",
+        "failed": false,
+        "rc": 0,
+        "start": "2020-06-04 15:00:30.299366",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "0022",
+        "stdout_lines": [
+            "0022"
+        ]
+    }
+}
+2020-06-04 15:00:30,544 p=16545 u=FLS |  TASK [Preflight check - Does the system have a standard umask] ****************************
+2020-06-04 15:00:30,568 p=16545 u=FLS |  PLAY RECAP ********************************************************************************
+2020-06-04 15:00:30,568 p=16545 u=FLS |  ds3                        : ok=2    changed=0    unreachable=0    failed=0   

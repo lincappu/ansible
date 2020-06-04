@@ -1,0 +1,40 @@
+---
+
+# update cpu and kernel params
+
+- name: update cpu and kernel params
+  hosts: node1
+  gather_facts: False
+  remote_user: root
+
+  tasks:
+    - name: setting present kernel params
+      sysctl: name="{{ item.name }}" value="{{ item.value }}" ignoreerrors=yes state=present
+      with_items:
+        - { name: 'net.core.somaxconn', value: 32768 }
+        - { name: 'vm.swappiness', value: 0 }
+        - { name: 'net.ipv4.tcp_syncookies', value: 0 }
+        - { name: 'fs.file-max', value: 1000000 }
+
+    - name: setting present kernel params
+      sysctl: name="{{ item.name }}" value="{{ item.value }}" ignoreerrors=yes state=present
+      with_items:
+        - { name: 'net.core.somaxconn', value: 32768 }
+        - { name: 'vm.swappiness', value: 0 }
+        - { name: 'net.ipv4.tcp_syncookies', value: 0 }
+        - { name: 'fs.file-max', value: 1000000 }
+
+    - name: update /etc/security/limits.conf
+      blockinfile:
+        dest: /etc/security/limits.conf
+        insertbefore: '# End of file'
+        block: |
+          *       soft        nofile        1000000
+          *       hard        nofile        1000000
+          *       soft        stack         10240
+      when:
+
+
+    - name: disable swap
+      command: swapoff -a
+      when: ansible_swaptotal_mb > 0

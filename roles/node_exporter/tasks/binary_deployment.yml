@@ -1,0 +1,18 @@
+---
+
+- name: create deploy directories
+  file: path={{item}} state=directory mode=0755
+  with_items:
+    - "{{/var/log/node_exporter.log}}"
+
+- name: deploy node_exporter binary
+  copy:  src="resources/bin/node_exporter" dest="c" mode=0755
+
+
+- name: create run script
+  template:
+    src: run_node_exporter_binary.sh.j2
+    dest: /opt/tidb/bin/run_node_exporter_binary.sh
+    mode: "0755"
+    backup: yes
+

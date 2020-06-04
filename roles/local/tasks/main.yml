@@ -1,0 +1,150 @@
+---
+
+#
+#- name: Stop if ansible version is too low, make sure that the Ansible version is Ansible 2.4.2 or later, otherwise a compatibility issue occurs.
+#  assert:
+#    that:
+#      - ansible_version.full is version('2.4.2', '>=')
+#    msg: "ansible version must >= 2.4.2"
+#
+#- name: create downloads and resources directories
+#  file: path="{{ item }}" state=directory mode=0755
+#  with_items:
+#  - "{{ downloads_dir }}"
+#  - "{{ resources_dir }}"
+#  - "{{ resources_dir }}/bin"
+#
+#- name: create cert directory
+#  file: path="{{ cert_dir }}" state=directory mode=0755
+#  when: enable_tls|default(false)
+#
+#- name: create packages.yml
+#  template: src=common_packages.yml.j2 dest={{ playbook_dir }}/conf/common_packages.yml
+#
+#- name: create specific deployment method packages.yml
+#  template: src={{ deployment_method }}_packages.yml.j2 dest={{ playbook_dir }}/conf/{{ deployment_method }}_packages.yml
+#
+#- include_vars: file={{ playbook_dir }}/conf/common_packages.yml  # include vars的方式
+#
+#- include_vars: file={{ playbook_dir }}/conf/{{ deployment_method }}_packages.yml
+
+- name: detect outbound network
+  shell: curl -s --connect-timeout 10 www.baidu.com 2>/dev/null >/dev/null; echo $?
+  args:
+    warn: no
+  changed_when: false
+  register: outbound_network_st
+  tags: test1
+
+- name: show
+  debug:
+    msg: "{{outbound_network_st}}"
+
+- name: set outbound network fact
+  set_fact: has_outbound_network={{ outbound_network_st.stdout.strip() == '0' }}  # true或者false
+
+- fail:
+    msg: "The Control Machine must have access to the Internet in order to download TiDB and related packages."
+  when: not has_outbound_network
+
+- name: detect GFW
+  shell: >
+    warn=no
+    curl -s --connect-timeout 10 google.com 2>/dev/null >/dev/null; echo $?
+  changed_when: false
+  register: gfw_st
+
+- name: show
+  debug:
+    msg: "{{gfw_st}}"
+
+- name: set GFW fact
+  set_fact: under_gfw={{ gfw_st.stdout.strip() != '0' }}
+
+# downloadingd package
+- name: download tidb binary
+  get_urls:
+    url: "{{item.url}}"
+    dest: "{{ downloads_dir }}/{{ item.name }}-{{ item.version }}.tar.gz"
+    checksum: "{{ item.checksum | default(omit) }}"  # 如果没有这个属性就忽略
+    force: yes
+    register: get_url_result
+    until: "'OK' in get_url_result.msg or 'file already exists' in get_url_result.msg"
+    retries: 4
+    delay: "{{ retry_stagger | random + 3 }}"   # 从0奥retry_stagger之间随意选一个数，然后加上3
+    with_items: "{{ tidb_packages }}"
+    when: has_outbound_network
+
+- name: download tidb toolkit binary
+  get_url:
+    url: "{{ item.url }}"
+    dest: "{{ downloads_dir }}/{{ item.name }}-{{ item.version }}.tar.gz"
+    checksum: "{{ item.checksum | default(omit) }}"
+    force: yes
+    validate_certs: no
+  register: get_url_result
+  until: "'OK' in get_url_result.msg or 'file already exists' in get_url_result.msg"
+  retries: 4
+  delay: "{{ retry_stagger | random + 3 }}"
+  with_items: "{{ tidb_toolkit_packages }}"
+  when: has_outbound_network
+
+- name: download common binary
+  get_url:
+    url: "{{ item.url }}"
+    dest: "{{ downloads_dir }}/{{ item.name }}-{{ item.version }}.tar.gz"
+    checksum: "{{ item.checksum | default(omit) }}"
+    force: yes
+    validate_certs: no
+  register: get_url_result
+  until: "'OK' in get_url_result.msg or 'file already exists' in get_url_result.msg"
+  retries: 4
+  delay: "{{ retry_stagger | random + 3 }}"
+  with_items: "{{ common_packages }}"
+  when: has_outbound_network
+
+- name: download diagnosis tools
+  get_url:
+    url: "{{ item.url }}"
+    dest: "{{ downloads_dir }}/{{ item.name }}-{{ item.version }}.tar.gz"
+    checksum: "{{ item.checksum | default(omit) }}"
+    force: yes
+    validate_certs: no
+  register: get_url_result
+  until: "'OK' in get_url_result.msg or 'file already exists' in get_url_result.msg"
+  retries: 4
+  delay: "{{ retry_stagger | random + 3 }}"
+  with_items: "{{ diagnosis_packages }}"
+  when: has_outbound_network
+
+- name: download cfssl binary
+  get_url:
+    url: https://pkg.cfssl.org/R1.2/cfssl_linux-amd64
+    dest: "{{ resources_dir }}/bin/cfssl"
+    mode: 0755
+    force: yes
+    validate_certs: no
+  register: get_url_result
+  until: "'OK' in get_url_result.msg or 'file already exists' in get_url_result.msg"
+  retries: 4
+  delay: "{{ retry_stagger | random + 3 }}"
+  when:
+    - has_outbound_network
+    - enable_tls|default(false)
+
+- name: download cfssljson binary
+  get_url:
+    url: https://pkg.cfssl.org/R1.2/cfssljson_linux-amd64
+    dest: "{{ resources_dir }}/bin/cfssljson"
+    mode: 0755
+    force: yes
+    validate_certs: no
+  register: get_url_result
+  until: "'OK' in get_url_result.msg or 'file already exists' in get_url_result.msg"
+  retries: 4
+  delay: "{{ retry_stagger | random + 3 }}"
+  when:
+    - has_outbound_network
+    - enable_tls|default(false)
+
+- include_tasks: "{{ deployment_method }}_deployment.yml"

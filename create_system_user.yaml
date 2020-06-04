@@ -1,4 +1,6 @@
 ---
+
+
 - name: create uesr
   hosts: bigdata_dev
   gather_facts: False
